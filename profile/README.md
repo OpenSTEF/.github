@@ -1,6 +1,6 @@
 # OpenSTEF 
 OpenSTEF provides automated machine learning pipelines to deliver accurate, self-correcting and explainable forecasts of the load on the grid for the next 48 hours.
-![Forecast highligts](https://alliander.atlassian.net/wiki/download/attachments/1389199487/image2019-11-20_11-7-5.png?version=1&modificationDate=1574244426843&cacheVersion=1&api=v2)
+![Forecast highligts](https://wiki.lfenergy.org/download/attachments/22976598/image2019-11-20_11-7-5.png?version=1&modificationDate=1637227332811&api=v2)
 
 Find the latest information on the project on the projects website:
 https://wiki.lfenergy.org/display/HOME/OpenSTEF
