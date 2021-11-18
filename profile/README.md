@@ -1,19 +1,10 @@
-## Hi there 👋
-
-<!--
-
-**Here are some ideas to get you started:**
-
-🙋‍♀️ A short introduction - what is your organization all about?
-🌈 Contribution guidelines - how can the community get involved?
-👩‍💻 Useful resources - where can the community find your docs? Is there anything else the community should know?
-🍿 Fun facts - what does your team eat for breakfast?
-🧙 Remember, you can do mighty things with the power of [Markdown](https://docs.github.com/github/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
--->
-
 # OpenSTEF 
 OpenSTEF provides automated machine learning pipelines to deliver accurate, self-correcting and explainable forecasts of the load on the grid for the next 48 hours.
-**add image**
+![Forecast highligts](https://alliander.atlassian.net/wiki/download/attachments/1389199487/image2019-11-20_11-7-5.png?version=1&modificationDate=1574244426843&cacheVersion=1&api=v2)
+
+Find the latest information on the project on the projects website:
+https://wiki.lfenergy.org/display/HOME/OpenSTEF
+
 
 ## Description
 The energy transition poses new challenges to all parties in the energy sector. For grid operators, the rise in renewable energy and electrification of energy consumption leads to the capacity of the grid to near its physical constraints. Forecasting the load on the grid in the next hours to days is essential for anticipating on local congestion and making the most of existing assets.  
@@ -22,12 +13,5 @@ OpenSTEF provides a complete software stack which forecasts the load on the elec
 
 The Dutch DSO Alliander started the Short-Term-Forecasting project to anticipate congestion in the distribution grid, to allow for grid safety analysis in the transmission grid and to enable smart grid innovations to locally balance supply and demand within the constraints of the grid. By opensourcing the stack, the ambition is to provide an industry standard for generating and evaluating forecasts in the operational time-domain, as well as allow for structured collaboration.
 
-**add image**
+![Dashboard screenshot](https://user-images.githubusercontent.com/18208480/127109029-77e09c97-8d06-4158-8789-4c1d5ecede61.png)
 Screenshot of the operational dashboard showing the key functionality of OpenSTEF
-
-Repositories
-OpenSTEF	Automated Machine Learning Pipelines. Builds the Open Short Term Forecasting package
-OpenSTEF-dbc	Provides (company specific) database connector for the OpenSTEF package
-OpenSTEF-offline-example	
-Provides Jupyter Notebooks showing how to use OpenSTEF and apply it's functionality to your usecase
-OpenSTEF-reference	Deploy the entire OpenSTEF stack on your machine. Provides a reference implementation of the OpenSTEF stack
