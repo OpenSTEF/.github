@@ -1,4 +1,4 @@
-# OpenSTEF 
+# OpenSTEF - Open Short Term Energy Forecasting
 OpenSTEF provides automated machine learning pipelines to deliver accurate, self-correcting and explainable forecasts of the load on the grid for the next 48 hours.
 
 ![Forecast highligts](https://wiki.lfenergy.org/download/attachments/22976598/image2019-11-20_11-7-5.png?version=1&modificationDate=1637227332811&api=v2)
