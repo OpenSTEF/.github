@@ -1,4 +1,4 @@
 # .github
-OpenSTEF community wide files
+OpenSTEF community wide files.
 
-The /profile/README.md will appear on the organization's profile
+The /profile/README.md will appear on the organization's profile.
