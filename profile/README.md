@@ -17,6 +17,6 @@ OpenSTEF provides a complete software stack which forecasts the load on the elec
 
 The Dutch DSO Alliander started the Short-Term-Forecasting project to anticipate congestion in the distribution grid, to allow for grid safety analysis in the transmission grid and to enable smart grid innovations to locally balance supply and demand within the constraints of the grid. By opensourcing the stack, the ambition is to provide an industry standard for generating and evaluating forecasts in the operational time-domain, as well as allow for structured collaboration.
 
-Dashboard documentation can be found [here](https://raw.githack.com/OpenSTEF/.github/feature-ktps-1832-dashboard_doc_openstef/profile/html/openstef_dashboard_doc.html).
-[![here](https://user-images.githubusercontent.com/60883372/146760483-29af3ac7-62af-4f13-98c7-982a79c517d1.jpg)](https://raw.githack.com/OpenSTEF/.github/feature-ktps-1832-dashboard_doc_openstef/profile/html/openstef_dashboard_doc.html)
+Dashboard documentation can be found [here](https://raw.githack.com/OpenSTEF/.github/main/profile/html/openstef_dashboard_doc.html).
+[![here](https://user-images.githubusercontent.com/60883372/146760483-29af3ac7-62af-4f13-98c7-982a79c517d1.jpg)](https://raw.githack.com/OpenSTEF/.github/main/profile/html/openstef_dashboard_doc.html)
 Screenshot of the operational dashboard showing the key functionality of OpenSTEF
