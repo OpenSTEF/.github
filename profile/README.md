@@ -1,4 +1,7 @@
 # OpenSTEF - Open Short Term Energy Forecasting
+[![License: MPL2.0](https://img.shields.io/badge/License-MPL2.0-informational.svg)](https://github.com/alliander-opensource/power-grid-model/blob/main/LICENSE)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5585/badge)](https://bestpractices.coreinfrastructure.org/projects/5585)
+
 OpenSTEF provides automated machine learning pipelines to deliver accurate, self-correcting and explainable forecasts of the load on the grid for the next 48 hours.
 
 ![Forecast highligts](https://wiki.lfenergy.org/download/attachments/22976598/image2019-11-20_11-7-5.png?version=1&modificationDate=1637227332811&api=v2)
@@ -20,3 +23,12 @@ The Dutch DSO Alliander started the Short-Term-Forecasting project to anticipate
 Dashboard documentation can be found [here](https://raw.githack.com/OpenSTEF/.github/main/profile/html/openstef_dashboard_doc.html).
 [![here](https://user-images.githubusercontent.com/60883372/146760483-29af3ac7-62af-4f13-98c7-982a79c517d1.jpg)](https://raw.githack.com/OpenSTEF/.github/main/profile/html/openstef_dashboard_doc.html)
 Screenshot of the operational dashboard showing the key functionality of OpenSTEF
+
+## License
+This project is licensed under the Mozilla Public License, version 2.0.
+
+## Contributing
+Please read [CODE_OF_CONDUCT.md](https://github.com/OpenSTEF/.github/blob/main/CODE_OF_CONDUCT.md), [CONTRIBUTING.md](https://github.com/OpenSTEF/.github/blob/main/CONTRIBUTING.md) and [PROJECT_GOVERNANACE.md](https://github.com/OpenSTEF/.github/blob/main/PROJECT_GOVERNANCE.md) for details on the process for submitting pull requests to us.
+
+## Contact
+Please read [SUPPORT.md](https://github.com/OpenSTEF/.github/blob/main/SUPPORT.md) for how to connect and get into contact with the OpenSTEF project
