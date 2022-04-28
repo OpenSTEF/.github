@@ -4,13 +4,16 @@
 
 OpenSTEF provides automated machine learning pipelines to deliver accurate, self-correcting and explainable forecasts of the load on the grid for the next 48 hours.
 
-![Forecast highligts](https://wiki.lfenergy.org/download/attachments/22976598/image2019-11-20_11-7-5.png?version=1&modificationDate=1637227332811&api=v2)
+![Forecast highligts](https://user-images.githubusercontent.com/18208480/127109029-77e09c97-8d06-4158-8789-4c1d5ecede61.png)
 
 Find the latest information on the project on the projects website:
-https://wiki.lfenergy.org/display/HOME/OpenSTEF
+https://wiki.lfenergy.org/display/OS/OpenSTEF
 
 Want to join the discussion? Join our Teams channel:
 https://teams.microsoft.com/l/team/19%3ac08a513650524fc988afb296cd0358cc%40thread.tacv2/conversations?groupId=bfcb763a-3a97-4938-81d7-b14512aa537d&tenantId=697f104b-d7cb-48c8-ac9f-bd87105bafdc
+
+Rather watch a video about OpenSTEF instead of reading?
+https://www.lfenergy.org/forecasting-to-create-a-more-resilient-optimized-grid/
 
 
 ## Description
