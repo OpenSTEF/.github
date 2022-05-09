@@ -83,6 +83,10 @@ the work. For more information see the Code review guideline.
 1. Upon receiving the sign-off of one of the maintainers you may merge your changes, or if you
    do not have permission to do that, you may request a maintainer to merge it for you.
 
+## Release Process
+Every new Pull Request merged to main triggers a new automatic github release with bumped patch version (0.0.**1**) and consequently a new pypi release and new published documentation. If needed, a manual release can be done:
+1. Major (**1**.0.0) or minor (0.**1**.0) version need to be bumped besides patch version: do this yourself in the feature branch in the setup.py.
+2. Pre-release needs to be made: do this yourself in the feature branch with new pre-release version in setup.py and manual pre-release in github GUI.
 
 ## Attribution
 
