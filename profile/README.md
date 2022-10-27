@@ -6,7 +6,7 @@ OpenSTEF provides automated machine learning pipelines to deliver accurate, self
 
 ![Forecast highligts](https://user-images.githubusercontent.com/18208480/127109029-77e09c97-8d06-4158-8789-4c1d5ecede61.png)
 
-Find the latest information on the project on [the projects website](https://wiki.lfenergy.org/display/OS/OpenSTEF).
+Find the latest information on the project on [the project's website](https://www.lfenergy.org/projects/openstef/).
 
 Want to join the discussion? Join our [Teams channel](https://teams.microsoft.com/l/team/19%3ac08a513650524fc988afb296cd0358cc%40thread.tacv2/conversations?groupId=bfcb763a-3a97-4938-81d7-b14512aa537d&tenantId=697f104b-d7cb-48c8-ac9f-bd87105bafdc).
 
