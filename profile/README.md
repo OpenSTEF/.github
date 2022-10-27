@@ -8,11 +8,13 @@ OpenSTEF provides automated machine learning pipelines to deliver accurate, self
 
 Find the latest information on the project on [the project's website](https://www.lfenergy.org/projects/openstef/).
 
+The `openstef` Python package is available at: https://pypi.org/project/openstef/. 
+
+Documentation is available at: https://openstef.github.io/openstef/index.html. 
+
+You can also watch a [video about OpenSTEF](https://www.lfenergy.org/forecasting-to-create-a-more-resilient-optimized-grid/) instead of reading about the project.
+
 Want to join the discussion? Join our [Teams channel](https://teams.microsoft.com/l/team/19%3ac08a513650524fc988afb296cd0358cc%40thread.tacv2/conversations?groupId=bfcb763a-3a97-4938-81d7-b14512aa537d&tenantId=697f104b-d7cb-48c8-ac9f-bd87105bafdc).
-
-You can also watch a [video about OpenSTEF](https://www.lfenergy.org/forecasting-to-create-a-more-resilient-optimized-grid/) instead of reading about the project
-
-
 
 ## Description
 The energy transition poses new challenges to all parties in the energy sector. For grid operators, the rise in renewable energy and electrification of energy consumption leads to the capacity of the grid to near its physical constraints. Forecasting the load on the grid in the next hours to days is essential for anticipating on local congestion and making the most of existing assets.  
