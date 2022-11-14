@@ -19,9 +19,8 @@ The Technical Steering Committee (TSC) is responsible for:
 
 The community council consists of the following members:
 1. Frank Kreuwel
-1. Jan Maarten van Doorn
-2. Jonas van den Bogaard
-3. David Swinkels
+2. Jan Maarten van Doorn
+3. Jonas van den Bogaard
 4. Frederik Stoel
 
 Frank Kreuwel will chair the TSC.
@@ -42,8 +41,7 @@ Maintainers are responsible for maintaining parts of the code-base. Maintainers 
 The current maintainers of this project are:
 1. Frank Kreuwel
 2. Jan Maarten van Doorn
-3. David Swinkels
-4. Frederik Stoel
+3. Frederik Stoel
 
 Any community member or Contributor can ask a question or raise a issue to the maintainers by logging a GitHub issue.
 
