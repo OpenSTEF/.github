@@ -14,12 +14,12 @@ OpenSTEF provides automated machine learning pipelines to deliver accurate and e
 
 ## External information sources
 - [Documentation](https://openstef.github.io/openstef/index.html);
-- [Python package](https://pypi.org/project/openstef/)
+- [Python package](https://pypi.org/project/openstef/);
 - [Project website](https://www.lfenergy.org/projects/openstef/);
 - [Dashboard documentation](https://raw.githack.com/OpenSTEF/.github/main/profile/html/openstef_dashboard_doc.html);
-- [Linux Foundation project page](https://openstef.github.io/openstef/index.html)
+- [Linux Foundation project page](https://openstef.github.io/openstef/index.html);
 - [Video about OpenSTEF](https://www.lfenergy.org/forecasting-to-create-a-more-resilient-optimized-grid/);
-- [Teams channel](https://teams.microsoft.com/l/team/19%3ac08a513650524fc988afb296cd0358cc%40thread.tacv2/conversations?groupId=bfcb763a-3a97-4938-81d7-b14512aa537d&tenantId=697f104b-d7cb-48c8-ac9f-bd87105bafdc) 
+- [Teams channel](https://teams.microsoft.com/l/team/19%3ac08a513650524fc988afb296cd0358cc%40thread.tacv2/conversations?groupId=bfcb763a-3a97-4938-81d7-b14512aa537d&tenantId=697f104b-d7cb-48c8-ac9f-bd87105bafdc). 
 
 
 ## Description
@@ -32,13 +32,13 @@ The Dutch DSO Alliander started the Short-Term-Forecasting project to anticipate
 ## Repositories 
 OpenSTEF has different repositories. 
 
-[OpenSTEF](https://github.com/OpenSTEF/openstef-dbc): Basis of all the repositories. Automatec machine learning pipelines. Builds the Opensource Short Term Forecasting package. 
+[OpenSTEF](https://github.com/OpenSTEF/openstef): Basis of all the repositories. Automatic machine learning pipelines. Builds the Opensource Short Term Forecasting package. 
 
 [OpenSTEF-dbc](https://github.com/OpenSTEF/openstef-dbc): Provides (company specific) database connector for OpenSTEF package.
 
-[OpenSTEF-reference](https://github.com/OpenSTEF/openstef-dbc): Deploy the entire OpenSTEF stack on your machine. Provides a reference implementation of the OpenSTEF stack including datamodels, databases and UI.  
+[OpenSTEF-reference](https://github.com/OpenSTEF/openstef-reference): Deploy the entire OpenSTEF stack on your machine. Provides a reference implementation of the OpenSTEF stack including datamodels, databases and UI.  
 
-[OpenSTEF-offline-example](https://github.com/OpenSTEF/openstef-dbc): Provides Jupyter Notebooks showing how to use OpenSTEF and apply it's functionality to your usecase.
+[OpenSTEF-offline-example](https://github.com/OpenSTEF/openstef-offline-example): Provides Jupyter Notebooks showing how to use OpenSTEF and apply it's functionality to your usecase.
 
 ## Framework features 
 - Prediction job: input configuration for a task or pipeline. It contains for example the location and forecasting horizon.
