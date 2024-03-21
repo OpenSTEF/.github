@@ -1,6 +1,8 @@
 # OpenSTEF - Open Short Term Energy Forecasting
 [![License: MPL2.0](https://img.shields.io/badge/License-MPL2.0-informational.svg)](https://github.com/openstef/openstef/blob/main/LICENSE)
 [![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5585/badge)](https://bestpractices.coreinfrastructure.org/projects/5585)
+[![Downloads](https://static.pepy.tech/badge/openstef)](https://pepy.tech/project/openstef)
+[![Downloads](https://static.pepy.tech/badge/openstef/month)](https://pepy.tech/project/openstef)
 
 OpenSTEF provides automated machine learning pipelines to deliver accurate and explainable forecasts of the load on the grid for the next 48 hours. Infused with expert energy knowledge, the platform incorporates external predictors such as weather data and market prices, ensuring validation and training of machine learning models to provide precise load predictions.
 
