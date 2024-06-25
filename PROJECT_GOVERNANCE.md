@@ -17,13 +17,12 @@ The Technical Steering Committee (TSC) is responsible for:
 1. Architectural and (development) infrastructure choices
 1. Raise subjects/issues that are important for the direction/development of this project
 
-The community council consists of the following members:
-1. Frank Kreuwel
-2. Jan Maarten van Doorn
-3. Jonas van den Bogaard
-4. Frederik Stoel
-
-Frank Kreuwel will chair the TSC.
+The TSC consists of the following members:
+1. Daan van Es (Chair)
+1. Frederik Stoel
+1. Jan Maarten van Doorn
+1. Jonas van den Bogaard
+1. Maxime Fortin
 
 Any community member or Contributor can ask that something be reviewed by the TSC by contacting the TSC at korte.termijn.prognoses@alliander.com.
 
@@ -39,9 +38,12 @@ Maintainers are responsible for maintaining parts of the code-base. Maintainers 
 1. In case of long discussions or arguments, maintainers or other can request a community council decision.
 
 The current maintainers of this project are:
-1. Frank Kreuwel
-2. Jan Maarten van Doorn
-3. Frederik Stoel
+1. Daan van Es
+1. Jan Maarten van Doorn
+1. Frederik Stoel
+1. Bart Pleiter
+1. Clara de Smet
+1. Egor Dmitriev
 
 Any community member or Contributor can ask a question or raise a issue to the maintainers by logging a GitHub issue.
 
