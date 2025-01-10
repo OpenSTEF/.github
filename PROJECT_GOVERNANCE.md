@@ -13,18 +13,19 @@ The basic principle is that decisions are based on consensus. If this decision m
 The Technical Steering Committee (TSC) is responsible for:
 
 1. General ambitions, objectives and goals of this project
-1. Guidelines and procedures and tool selection
-1. Architectural and (development) infrastructure choices
-1. Raise subjects/issues that are important for the direction/development of this project
+2. Guidelines and procedures and tool selection
+3. Architectural and (development) infrastructure choices
+4. Raise subjects/issues that are important for the direction/development of this project
 
-The community council consists of the following members:
-1. Frank Kreuwel
-2. Jan Maarten van Doorn
-3. Jonas van den Bogaard
+The TSC consists of the following members:
+1. Jonas van den Boogaard
+2. Frank Kreuwel
+3. Jan Maarten van Doorn
 4. Frederik Stoel
-
-Frank Kreuwel will chair the TSC.
-
+5. Daan van Es (chair)
+6. Maxime Fortin
+7. Bart Pleiter
+ 
 Any community member or Contributor can ask that something be reviewed by the TSC by contacting the TSC at korte.termijn.prognoses@alliander.com.
 
 ## Maintainers
@@ -32,16 +33,20 @@ Any community member or Contributor can ask that something be reviewed by the TS
 Maintainers are responsible for maintaining parts of the code-base. Maintainers have the following responsibilities
 
 1. Coordinate development activity
-1. Make sure code/documentation reviews are being done
-1. Coordinate pull-requests
-1. Coordinate bug follow-ups
-1. Coordinate questions
-1. In case of long discussions or arguments, maintainers or other can request a community council decision.
+2. Make sure code/documentation reviews are being done
+3. Coordinate pull-requests
+4. Coordinate bug follow-ups
+5. Coordinate questions
+6. In case of long discussions or arguments, maintainers or other can request a community council decision.
 
 The current maintainers of this project are:
-1. Frank Kreuwel
+1. Daan van Es
 2. Jan Maarten van Doorn
 3. Frederik Stoel
+4. Bart Pleiter
+5. Clara de Smet
+6. Egor Dmitriev
+7. Lars Schilders
 
 Any community member or Contributor can ask a question or raise a issue to the maintainers by logging a GitHub issue.
 
