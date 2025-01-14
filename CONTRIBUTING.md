@@ -43,8 +43,6 @@ The following convention will be used for feature branches: 'Feature [jiraticket
 
 The following convention will be used for bugfix branches: 'Bugfix [jiraticketnumber] [descripttion]' or 'Bugfix [name feature]' when no Jiraticketnumber is avialable.  So for example:  `Bugfix ktp 1425 use training days` or `Bugfix use training days`.
 
-<img src="https://github.com/Alliander/icarus-forecasts/blob/master/img/gitflow.svg" width="700">
-
 ## Signing the Developer Certificate of Origin (DCO)
 This project utilize a Developer Certificate of Origin (DCO) to ensure that each commit was written by the author or that the author has the appropriate rights necessary to contribute the change. Specifically, we utilize [Developer Certificate of Origin, Version 1.1](http://developercertificate.org/),  which is the same mechanism that the Linux® Kernel and many other communities use to manage code contributions. The DCO is considered one of the simplest tools for sign-offs from contributors as the representations are meant to be easy to read and indicating signoff is done as a part of the commit message.
 
