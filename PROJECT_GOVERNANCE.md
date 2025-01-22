@@ -18,7 +18,7 @@ The Technical Steering Committee (TSC) is responsible for:
 4. Raise subjects/issues that are important for the direction/development of this project
 
 The TSC consists of the following members:
-1. Jonas van den Boogaard
+1. Jonas van den Bogaard
 2. Frank Kreuwel
 3. Jan Maarten van Doorn
 4. Frederik Stoel
