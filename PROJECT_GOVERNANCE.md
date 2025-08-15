@@ -56,4 +56,9 @@ Contributors include anyone in the technical community that contributes code, do
 
 Anyone can become a contributor. There is no expectation of commitment to the project, no specific skill requirements and no selection process. To become a contributor, a community member simply has to perform one or more actions that are beneficial to the project.
 
+Our gratitude goes to the following all-time top contributors:
+1. Jan Maarten van Doorn 
+2. Frank Kreuwel
+3. Bram Harmsen
+
 
