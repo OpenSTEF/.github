@@ -42,11 +42,10 @@ Maintainers are responsible for maintaining parts of the code-base. Maintainers 
 The current maintainers of this project are:
 1. Daan van Es
 2. Jan Maarten van Doorn
-3. Frederik Stoel
-4. Bart Pleiter
-5. Clara de Smet
-6. Egor Dmitriev
-7. Lars Schilders
+3. Bart Pleiter
+4. Clara de Smet
+5. Egor Dmitriev
+6. Lars Schilders
 
 Any community member or Contributor can ask a question or raise a issue to the maintainers by logging a GitHub issue.
 
@@ -57,8 +56,14 @@ Contributors include anyone in the technical community that contributes code, do
 Anyone can become a contributor. There is no expectation of commitment to the project, no specific skill requirements and no selection process. To become a contributor, a community member simply has to perform one or more actions that are beneficial to the project.
 
 Our gratitude goes to the following all-time top contributors:
-1. Jan Maarten van Doorn 
+1. Jan Maarten van Doorn
 2. Frank Kreuwel
 3. Bram Harmsen
-
+4. David Swinkels
+5. Enrico Schmitz
+6. Egor DMitriev
+7. Martijn Cazemier
+8. Benoit Hardier
+9. Bart Pleiter
+10. Charlotte Cambier van Nooten
 
