@@ -19,12 +19,11 @@ The Technical Steering Committee (TSC) is responsible for:
 
 The TSC consists of the following members:
 1. Jonas van den Bogaard
-2. Frank Kreuwel
-3. Jan Maarten van Doorn
-4. Frederik Stoel
-5. Daan van Es (chair)
-6. Maxime Fortin
-7. Bart Pleiter
+2. Jan Maarten van Doorn
+3. Frederik Stoel
+4. Daan van Es (chair)
+5. Maxime Fortin
+6. Bart Pleiter
  
 Any community member or Contributor can ask that something be reviewed by the TSC by contacting the TSC at korte.termijn.prognoses@alliander.com.
 
@@ -43,7 +42,7 @@ The current maintainers of this project are:
 1. Daan van Es
 2. Jan Maarten van Doorn
 3. Bart Pleiter
-4. Clara de Smet
+4. Marnix van Lieshout
 5. Egor Dmitriev
 6. Lars Schilders
 
@@ -61,7 +60,7 @@ Our gratitude goes to the following all-time top contributors:
 3. Bram Harmsen
 4. David Swinkels
 5. Enrico Schmitz
-6. Egor DMitriev
+6. Egor Dmitriev
 7. Martijn Cazemier
 8. Benoit Hardier
 9. Bart Pleiter
