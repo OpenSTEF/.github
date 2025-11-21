@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: 2017-2021 Alliander N.V. <korte.termijn.prognoses@alliander.com>
+SPDX-FileCopyrightText: 2017-2021 Alliander N.V. <openstef@lfenergy.org>
 
 SPDX-License-Identifier: MPL-2.0
 -->
@@ -91,8 +91,3 @@ Every new Pull Request merged to main triggers a new automatic github release wi
 This Contributing.md is adapted from Google
 available at
 https://github.com/google/new-project/blob/master/docs/contributing.md
-
-
-
-
-
