@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: 2017-2021 Contributors to the OpenSTF project <korte.termijn.prognoses@alliander.com>
+SPDX-FileCopyrightText: 2017-2021 Contributors to the OpenSTF project <openstef@lfenergy.org>
 
 SPDX-License-Identifier: MPL-2.0
 -->
@@ -25,7 +25,7 @@ The TSC consists of the following members:
 5. Maxime Fortin
 6. Bart Pleiter
  
-Any community member or Contributor can ask that something be reviewed by the TSC by contacting the TSC at korte.termijn.prognoses@alliander.com.
+Any community member or Contributor can ask that something be reviewed by the TSC by contacting the TSC at openstef@lfenergy.org.
 
 ## Maintainers
 
@@ -65,4 +65,3 @@ Our gratitude goes to the following all-time top contributors:
 8. Benoit Hardier
 9. Bart Pleiter
 10. Charlotte Cambier van Nooten
-
