@@ -21,7 +21,7 @@ OpenSTEF provides automated machine learning pipelines to deliver accurate and e
 - [Dashboard documentation](https://raw.githack.com/OpenSTEF/.github/main/profile/html/openstef_dashboard_doc.html);
 - [Linux Foundation project page](https://openstef.github.io/openstef/index.html);
 - [Video about OpenSTEF](https://www.lfenergy.org/forecasting-to-create-a-more-resilient-optimized-grid/);
-- [OpenSTEF Slack channel](https://app.slack.com/huddle/TLU68MTML/C04P56MSM40). 
+- [LF Energy OpenSTEF Slack channel](https://app.slack.com/huddle/TLU68MTML/C04P56MSM40) ([Instructions to join the LF Energy Slack](https://tac.lfenergy.org/tools/slack.html)) 
 
 
 ## Description
