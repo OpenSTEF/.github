@@ -23,17 +23,17 @@ This project follows the following [Code of Conduct](https://github.com/OpenSTEF
 
 ## Style guide
 
-This project uses the PEP 8 Style Guide for Python Code. For all details about the various conventions please refer to:
+This project follows [PEP 8](https://peps.python.org/pep-0008/) as enforced by [Ruff](https://docs.astral.sh/ruff/). For the full style guide, including naming conventions, type hints, documentation standards, and more, please refer to the [OpenSTEF Code Style Guide](https://openstef.github.io/openstef/contribute/code_style_guide.html).
 
-[PEP 8](https://www.python.org/dev/peps/pep-0008)
-
-Tip: Use autopep8 to automatically format your Python code to conform to the PEP 8 style guide.
-
-Furthermore the following conventions apply:
+Key formatting rules:
 
 * Maximum line length: 88 characters
-* Double quotes for strings, keys etc.
-    * Except when double quotes in the middle of a string are required.
+* Indentation: 4 spaces (no tabs)
+* Double quotes for strings
+* Trailing commas required in multi-line constructs
+* Import sorting: alphabetical within sections
+
+Most style issues are automatically handled by our development tools. Run `poe all` to fix formatting and catch style violations automatically.
 
 ## Git branching
 
