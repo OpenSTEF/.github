@@ -58,6 +58,16 @@ There are other great tools out there to manage DCO signoffs for developers to m
 * Additionally, it is possible to use shell scripting to automatically apply the sign-off. For an example for bash to be put into a `.bashrc` file, see [the documentation provided by LF Energy](https://wiki.lfenergy.org/display/HOME/Contribution+and+Compliance+Guidelines#ContributionandComplianceGuidelines-Contributionsignoff). 
 * Alternatively, you can add `prepare-commit-msg hook` in .git/hooks directory. For an example, see [here](https://github.com/Samsung/ONE-vscode/wiki/ONE-vscode-Developer's-Certificate-of-Origin).
 
+## Testing policy
+
+All major new functionality **must** be accompanied by tests added to the automated test suite. This ensures that new features work as expected and prevents regressions in future changes. Bug fixes should also include a test that reproduces the issue and verifies the fix.
+
+Tests are run automatically via `poe tests`. All tests must pass before a pull request can be merged. For details on test naming conventions and structure, see the [OpenSTEF Code Style Guide](https://openstef.github.io/openstef/contribute/code_style_guide.html).
+
+## Warning flags
+
+This project enforces maximally strict warnings. All linting warnings from [Ruff](https://docs.astral.sh/ruff/) and type checking warnings from [Pyright](https://github.com/microsoft/pyright) must be resolved before merging. Run `poe all --check` to verify there are no outstanding warnings.
+
 ## Code reviews
 
 All patches and contributions, including patches and contributions by project members, require review by one of the maintainers of the project. We
@@ -72,7 +82,7 @@ The process for a code change and pull request you should follow:
 
 1. Create a topic branch in your local repository, following the naming format
 `feature/description` or `bugfix/description`. For more information see the Git branching guideline.
-1. Make changes, compile, and test thoroughly. Ensure any install or build dependencies are removed before the end of the layer when doing a build. Code style should match existing style and conventions, and changes should be focused on the topic the pull request will be addressed. For more information see the style guide.
+1. Make changes, compile, and test thoroughly. Major new functionality **must** include tests in the automated test suite. Ensure any install or build dependencies are removed before the end of the layer when doing a build. Code style should match existing style and conventions, and changes should be focused on the topic the pull request will be addressed. For more information see the style guide.
 1. Push commits to your fork.
 1. Create a Github pull request from your topic branch.
 1. Signing the Developer Certificate of Origin (DCO)
