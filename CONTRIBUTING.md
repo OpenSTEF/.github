@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: 2017-2021 Alliander N.V. <openstef@lfenergy.org>
+SPDX-FileCopyrightText: 2026 Contributors to the OpenSTEF project <openstef@lfenergy.org>
 
 SPDX-License-Identifier: MPL-2.0
 -->
@@ -12,8 +12,10 @@ just a few small guidelines you need to follow before making a change.
 
 ## Filing bugs and change requests
 
-You can file bugs against and change request for the project via github issues. Consult [GitHub Help](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue) for more
-information on using github issues.
+You can file bugs against and change requests for the project via GitHub issues. Consult [GitHub Help](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue) for more
+information on using GitHub issues.
+
+For more information on how to get help, report bugs, or suggest features, please refer to [SUPPORT.md](./SUPPORT.md).
 
 ## Community Guidelines
 
@@ -37,11 +39,9 @@ Furthermore the following conventions apply:
 
 This project uses the [GitHub flow Workflow](https://guides.github.com/introduction/flow/) and branching model. The `main` branch always contains the latest release. New feature branches are branched from `main`. When a feature is finished it is merged back into `main` via a [Pull Request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#:~:text=Pull%20requests%20let%20you%20tell,merged%20into%20the%20base%20branch.).
 
-This project also uses [Jira](https://www.atlassian.com/software/jira) for its [Scrum](https://en.wikipedia.org/wiki/Scrum_software_development) planning. In order to connect git branches to Jira it is prefpreferred that the user story `id` (e.g. KTP-753) is added to the branch name.
+The following convention will be used for feature branches: `feature/description`. For example: `feature/unittest-all-schedulers`.
 
-The following convention will be used for feature branches: 'Feature [jiraticketnumber] [descripttion]' or 'Feature [name feature]' when no Jiraticketnumber is avialable.  So for example:  `Feature ktp 753 unittest all schedulers` or `Feature unittest all schedulers`.
-
-The following convention will be used for bugfix branches: 'Bugfix [jiraticketnumber] [descripttion]' or 'Bugfix [name feature]' when no Jiraticketnumber is avialable.  So for example:  `Bugfix ktp 1425 use training days` or `Bugfix use training days`.
+The following convention will be used for bugfix branches: `bugfix/description`. For example: `bugfix/use-training-days`.
 
 ## Signing the Developer Certificate of Origin (DCO)
 This project utilize a Developer Certificate of Origin (DCO) to ensure that each commit was written by the author or that the author has the appropriate rights necessary to contribute the change. Specifically, we utilize [Developer Certificate of Origin, Version 1.1](http://developercertificate.org/),  which is the same mechanism that the Linux® Kernel and many other communities use to manage code contributions. The DCO is considered one of the simplest tools for sign-offs from contributors as the representations are meant to be easy to read and indicating signoff is done as a part of the commit message.
@@ -71,7 +71,7 @@ Contributions should be submitted as Github pull requests. See [Creating a pull 
 The process for a code change and pull request you should follow:
 
 1. Create a topic branch in your local repository, following the naming format
-"feature-KTP-###". For more information see the Git branching guideline.
+`feature/description` or `bugfix/description`. For more information see the Git branching guideline.
 1. Make changes, compile, and test thoroughly. Ensure any install or build dependencies are removed before the end of the layer when doing a build. Code style should match existing style and conventions, and changes should be focused on the topic the pull request will be addressed. For more information see the style guide.
 1. Push commits to your fork.
 1. Create a Github pull request from your topic branch.
@@ -85,6 +85,10 @@ the work. For more information see the Code review guideline.
 Every new Pull Request merged to main triggers a new automatic github release with bumped patch version (0.0.**1**) and consequently a new pypi release and new published documentation. If needed, a manual release can be done:
 1. Major (**1**.0.0) or minor (0.**1**.0) version need to be bumped besides patch version: do this yourself in the feature branch in the setup.py.
 2. Pre-release needs to be made: do this yourself in the feature branch with new pre-release version in setup.py and manual pre-release in github GUI.
+
+## How to report a security vulnerability
+
+Please refer to [SECURITY.md](./SECURITY.md) for details on reporting a security vulnerability.
 
 ## Attribution
 
