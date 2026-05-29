@@ -1,5 +1,5 @@
 <!--
-SPDX-FileCopyrightText: 2017-2021 Alliander N.V. <openstef@lfenergy.org>
+SPDX-FileCopyrightText: 2026 Contributors to the OpenSTEF project <openstef@lfenergy.org>
 
 SPDX-License-Identifier: MPL-2.0
 -->
@@ -12,8 +12,10 @@ just a few small guidelines you need to follow before making a change.
 
 ## Filing bugs and change requests
 
-You can file bugs against and change request for the project via github issues. Consult [GitHub Help](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue) for more
-information on using github issues.
+You can file bugs against and change requests for the project via GitHub issues. Consult [GitHub Help](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue) for more
+information on using GitHub issues.
+
+For more information on how to get help, report bugs, or suggest features, please refer to [SUPPORT.md](./SUPPORT.md).
 
 ## Community Guidelines
 
@@ -21,27 +23,25 @@ This project follows the following [Code of Conduct](https://github.com/OpenSTEF
 
 ## Style guide
 
-This project uses the PEP 8 Style Guide for Python Code. For all details about the various conventions please refer to:
+This project follows [PEP 8](https://peps.python.org/pep-0008/) as enforced by [Ruff](https://docs.astral.sh/ruff/). For the full style guide, including naming conventions, type hints, documentation standards, and more, please refer to the [OpenSTEF Code Style Guide](https://openstef.github.io/openstef/contribute/code_style_guide.html).
 
-[PEP 8](https://www.python.org/dev/peps/pep-0008)
-
-Tip: Use autopep8 to automatically format your Python code to conform to the PEP 8 style guide.
-
-Furthermore the following conventions apply:
+Key formatting rules:
 
 * Maximum line length: 88 characters
-* Double quotes for strings, keys etc.
-    * Except when double quotes in the middle of a string are required.
+* Indentation: 4 spaces (no tabs)
+* Double quotes for strings
+* Trailing commas required in multi-line constructs
+* Import sorting: alphabetical within sections
+
+Most style issues are automatically handled by our development tools. Run `poe all` to fix formatting and catch style violations automatically.
 
 ## Git branching
 
 This project uses the [GitHub flow Workflow](https://guides.github.com/introduction/flow/) and branching model. The `main` branch always contains the latest release. New feature branches are branched from `main`. When a feature is finished it is merged back into `main` via a [Pull Request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#:~:text=Pull%20requests%20let%20you%20tell,merged%20into%20the%20base%20branch.).
 
-This project also uses [Jira](https://www.atlassian.com/software/jira) for its [Scrum](https://en.wikipedia.org/wiki/Scrum_software_development) planning. In order to connect git branches to Jira it is prefpreferred that the user story `id` (e.g. KTP-753) is added to the branch name.
+The following convention will be used for feature branches: `feature/description`. For example: `feature/unittest-all-schedulers`.
 
-The following convention will be used for feature branches: 'Feature [jiraticketnumber] [descripttion]' or 'Feature [name feature]' when no Jiraticketnumber is avialable.  So for example:  `Feature ktp 753 unittest all schedulers` or `Feature unittest all schedulers`.
-
-The following convention will be used for bugfix branches: 'Bugfix [jiraticketnumber] [descripttion]' or 'Bugfix [name feature]' when no Jiraticketnumber is avialable.  So for example:  `Bugfix ktp 1425 use training days` or `Bugfix use training days`.
+The following convention will be used for bugfix branches: `bugfix/description`. For example: `bugfix/use-training-days`.
 
 ## Signing the Developer Certificate of Origin (DCO)
 This project utilize a Developer Certificate of Origin (DCO) to ensure that each commit was written by the author or that the author has the appropriate rights necessary to contribute the change. Specifically, we utilize [Developer Certificate of Origin, Version 1.1](http://developercertificate.org/),  which is the same mechanism that the Linux® Kernel and many other communities use to manage code contributions. The DCO is considered one of the simplest tools for sign-offs from contributors as the representations are meant to be easy to read and indicating signoff is done as a part of the commit message.
@@ -58,6 +58,16 @@ There are other great tools out there to manage DCO signoffs for developers to m
 * Additionally, it is possible to use shell scripting to automatically apply the sign-off. For an example for bash to be put into a `.bashrc` file, see [the documentation provided by LF Energy](https://wiki.lfenergy.org/display/HOME/Contribution+and+Compliance+Guidelines#ContributionandComplianceGuidelines-Contributionsignoff). 
 * Alternatively, you can add `prepare-commit-msg hook` in .git/hooks directory. For an example, see [here](https://github.com/Samsung/ONE-vscode/wiki/ONE-vscode-Developer's-Certificate-of-Origin).
 
+## Testing policy
+
+All major new functionality **must** be accompanied by tests added to the automated test suite. This ensures that new features work as expected and prevents regressions in future changes. Bug fixes should also include a test that reproduces the issue and verifies the fix.
+
+Tests are run automatically via `poe tests`. All tests must pass before a pull request can be merged. For details on test naming conventions and structure, see the [OpenSTEF Code Style Guide](https://openstef.github.io/openstef/contribute/code_style_guide.html).
+
+## Warning flags
+
+This project enforces maximally strict warnings. All linting warnings from [Ruff](https://docs.astral.sh/ruff/) and type checking warnings from [Pyright](https://github.com/microsoft/pyright) must be resolved before merging. Run `poe all --check` to verify there are no outstanding warnings.
+
 ## Code reviews
 
 All patches and contributions, including patches and contributions by project members, require review by one of the maintainers of the project. We
@@ -71,8 +81,8 @@ Contributions should be submitted as Github pull requests. See [Creating a pull 
 The process for a code change and pull request you should follow:
 
 1. Create a topic branch in your local repository, following the naming format
-"feature-KTP-###". For more information see the Git branching guideline.
-1. Make changes, compile, and test thoroughly. Ensure any install or build dependencies are removed before the end of the layer when doing a build. Code style should match existing style and conventions, and changes should be focused on the topic the pull request will be addressed. For more information see the style guide.
+`feature/description` or `bugfix/description`. For more information see the Git branching guideline.
+1. Make changes, compile, and test thoroughly. Major new functionality **must** include tests in the automated test suite. Ensure any install or build dependencies are removed before the end of the layer when doing a build. Code style should match existing style and conventions, and changes should be focused on the topic the pull request will be addressed. For more information see the style guide.
 1. Push commits to your fork.
 1. Create a Github pull request from your topic branch.
 1. Signing the Developer Certificate of Origin (DCO)
@@ -85,6 +95,10 @@ the work. For more information see the Code review guideline.
 Every new Pull Request merged to main triggers a new automatic github release with bumped patch version (0.0.**1**) and consequently a new pypi release and new published documentation. If needed, a manual release can be done:
 1. Major (**1**.0.0) or minor (0.**1**.0) version need to be bumped besides patch version: do this yourself in the feature branch in the setup.py.
 2. Pre-release needs to be made: do this yourself in the feature branch with new pre-release version in setup.py and manual pre-release in github GUI.
+
+## How to report a security vulnerability
+
+Please refer to [SECURITY.md](./SECURITY.md) for details on reporting a security vulnerability.
 
 ## Attribution
 
