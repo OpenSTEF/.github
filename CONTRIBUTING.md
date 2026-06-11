@@ -1,93 +1,169 @@
 <!--
-SPDX-FileCopyrightText: 2017-2021 Alliander N.V. <openstef@lfenergy.org>
+SPDX-FileCopyrightText: 2017-2025 Contributors to the OpenSTEF project <openstef@lfenergy.org>
 
 SPDX-License-Identifier: MPL-2.0
 -->
 
 # How to Contribute
 
-We'd love to accept your patches and contributions to this project. There are
-just a few small guidelines you need to follow before making a change.
+We'd love to accept contributions to this project in any form.
+You do not need to be a forecasting or energy systems expert to make a contribution.
+There are just a few small guidelines you need to follow before making a change.
 
+## Ways to Contribute
 
-## Filing bugs and change requests
+Contribution does not necessarily mean committing code. We recognize different levels of contribution in increasing order of dedication:
 
-You can file bugs against and change request for the project via github issues. Consult [GitHub Help](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue) for more
-information on using github issues.
+1. Test and use the library — give feedback on the user experience or suggest new features
+2. Report bugs
+3. Improve documentation — fix typos, clarify docstrings, write examples or tutorials
+4. Fix bugs or implement features — see [Pull Request Process](#pull-request-process)
+5. Participate in the community — join our four-weekly co-coding meetings or Slack discussions
+
+A good place to start is to look at issues with the [`good first issue`](https://github.com/OpenSTEF/openstef/labels/good%20first%20issue) label.
+
+## Filing Bugs and Change Requests
+
+You can file bugs and change requests via [GitHub Issues](https://github.com/OpenSTEF/openstef/issues). Consult [GitHub Help](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue) for more information on using GitHub issues.
 
 ## Community Guidelines
 
-This project follows the following [Code of Conduct](https://github.com/OpenSTEF/.github/blob/main/CODE_OF_CONDUCT.md).
+This project follows the [Code of Conduct](https://github.com/OpenSTEF/.github/blob/main/CODE_OF_CONDUCT.md).
 
-## Style guide
+## Getting Help
 
-This project uses the PEP 8 Style Guide for Python Code. For all details about the various conventions please refer to:
+- **Slack**: [LF Energy Slack workspace](https://slack.lfenergy.org/) (#openstef channel)
+- **Issues**: [GitHub Issues](https://github.com/OpenSTEF/openstef/issues)
+- **Email**: openstef@lfenergy.org
+- **Community meetings**: Join our four-weekly co-coding sessions
 
-[PEP 8](https://www.python.org/dev/peps/pep-0008)
+## Style Guide
 
-Tip: Use autopep8 to automatically format your Python code to conform to the PEP 8 style guide.
+OpenSTEF uses [Ruff](https://docs.astral.sh/ruff/) to enforce Python code style and formatting. If the code format is not complying, the pipeline will fail and the pull request will be blocked.
 
-Furthermore the following conventions apply:
+Run `poe all` to automatically check and fix formatting, linting, and type issues before committing. For full details on conventions, see the [style guide](https://openstef.github.io/openstef/contribute/code_style_guide.html).
 
-* Maximum line length: 88 characters
-* Double quotes for strings, keys etc.
-    * Except when double quotes in the middle of a string are required.
+## Git Branching
 
-## Git branching
+This project uses the [GitHub flow](https://guides.github.com/introduction/flow/) branching model. The `main` branch always contains the latest release. Feature branches are created from `main` and merged back via a Pull Request.
 
-This project uses the [GitHub flow Workflow](https://guides.github.com/introduction/flow/) and branching model. The `main` branch always contains the latest release. New feature branches are branched from `main`. When a feature is finished it is merged back into `main` via a [Pull Request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#:~:text=Pull%20requests%20let%20you%20tell,merged%20into%20the%20base%20branch.).
+In case of a major version release with new features and/or breaking changes, a temporary `release/` branch may be created to hold all the changes until they are merged into `main`.
 
-This project also uses [Jira](https://www.atlassian.com/software/jira) for its [Scrum](https://en.wikipedia.org/wiki/Scrum_software_development) planning. In order to connect git branches to Jira it is prefpreferred that the user story `id` (e.g. KTP-753) is added to the branch name.
+### Branch naming
 
-The following convention will be used for feature branches: 'Feature [jiraticketnumber] [descripttion]' or 'Feature [name feature]' when no Jiraticketnumber is avialable.  So for example:  `Feature ktp 753 unittest all schedulers` or `Feature unittest all schedulers`.
+Use descriptive names following these patterns:
 
-The following convention will be used for bugfix branches: 'Bugfix [jiraticketnumber] [descripttion]' or 'Bugfix [name feature]' when no Jiraticketnumber is avialable.  So for example:  `Bugfix ktp 1425 use training days` or `Bugfix use training days`.
+| Type | Pattern | Example |
+|------|---------|---------|
+| New feature | `feat/<issue>-<description>` | `feat/123-add-transformer-model` |
+| Bug fix | `fix/<issue>-<description>` | `fix/456-handle-missing-weather-data` |
+| Documentation | `docs/<issue>-<description>` | `docs/789-improve-installation-guide` |
+| Refactoring | `refactor/<description>` | `refactor/cleanup-feature-engineering` |
+| Performance | `perf/<description>` | `perf/optimize-forecasting-pipeline` |
+
+Include the GitHub issue number when one is available.
+
+## Commit Message Guidelines
+
+OpenSTEF uses [Conventional Commits](https://www.conventionalcommits.org/) for structured commit messages. This enables automated changelog generation and semantic versioning.
+
+**Format:** `<type>[optional scope]: <description>`
+
+**Types:** `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`
+
+**Examples:**
+
+```bash
+git commit -m "feat(models): add transformer-based forecasting model"
+git commit -m "fix(validation): handle missing weather data gracefully
+
+Fixes #456"
+```
+
+**Guidelines:**
+
+- Use the imperative mood ("Add feature" not "Added feature")
+- Keep the first line under 50 characters
+- Reference issues with "Closes #123" or "Fixes #456"
+- Use `!` after the type to indicate breaking changes (e.g. `feat!:`)
 
 ## Signing the Developer Certificate of Origin (DCO)
-This project utilize a Developer Certificate of Origin (DCO) to ensure that each commit was written by the author or that the author has the appropriate rights necessary to contribute the change. Specifically, we utilize [Developer Certificate of Origin, Version 1.1](http://developercertificate.org/),  which is the same mechanism that the Linux® Kernel and many other communities use to manage code contributions. The DCO is considered one of the simplest tools for sign-offs from contributors as the representations are meant to be easy to read and indicating signoff is done as a part of the commit message.
 
-This means that each commit must include a DCO which looks like this:
+This project uses a [Developer Certificate of Origin, Version 1.1](http://developercertificate.org/) to ensure that each commit was written by the author or that the author has the appropriate rights to contribute the change.
 
-`Signed-off-by: Joe Smith <joe.smith@email.com>`
+Each commit must include a sign-off line:
 
-The project requires that the name used is your real name and the e-mail used is your real e-mail. Neither anonymous contributors nor those utilizing pseudonyms will be accepted.
+```
+Signed-off-by: Joe Smith <joe.smith@email.com>
+```
 
-There are other great tools out there to manage DCO signoffs for developers to make it much easier to do signoffs:
-* Git makes it easy to add this line to your commit messages. Make sure the `user.name` and `user.email` are set in your git configs. Use `-s` or `--signoff` to add the Signed-off-by line to the end of the commit message.
-* [GitHub UI integrations]( https://github.com/scottrigby/dco-gh-ui ) for adding the signoff automatically to commits made with the GitHub browser UI
-* Additionally, it is possible to use shell scripting to automatically apply the sign-off. For an example for bash to be put into a `.bashrc` file, see [the documentation provided by LF Energy](https://wiki.lfenergy.org/display/HOME/Contribution+and+Compliance+Guidelines#ContributionandComplianceGuidelines-Contributionsignoff). 
-* Alternatively, you can add `prepare-commit-msg hook` in .git/hooks directory. For an example, see [here](https://github.com/Samsung/ONE-vscode/wiki/ONE-vscode-Developer's-Certificate-of-Origin).
+The project requires your real name and real email address. Anonymous contributions and pseudonyms are not accepted.
 
-## Code reviews
+**How to sign off:**
 
-All patches and contributions, including patches and contributions by project members, require review by one of the maintainers of the project. We
-use GitHub pull requests for this purpose. Consult the pull request process below and the
-[GitHub Help](https://help.github.com/articles/about-pull-requests/) for more
-information on using pull requests
+- Use `git commit -s` or `git commit --signoff` to add the line automatically (requires `user.name` and `user.email` to be set in your git config)
+- [GitHub UI integration](https://github.com/scottrigby/dco-gh-ui) for browser-based commits
+- Add a `prepare-commit-msg` hook in `.git/hooks/` — see [this example](https://github.com/Samsung/ONE-vscode/wiki/ONE-vscode-Developer's-Certificate-of-Origin)
 
 ## Pull Request Process
-Contributions should be submitted as Github pull requests. See [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) if you're unfamiliar with this concept.
 
-The process for a code change and pull request you should follow:
+Contributions should be submitted as GitHub pull requests. See [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) if you're unfamiliar with this concept.
 
-1. Create a topic branch in your local repository, following the naming format
-"feature-KTP-###". For more information see the Git branching guideline.
-1. Make changes, compile, and test thoroughly. Ensure any install or build dependencies are removed before the end of the layer when doing a build. Code style should match existing style and conventions, and changes should be focused on the topic the pull request will be addressed. For more information see the style guide.
-1. Push commits to your fork.
-1. Create a Github pull request from your topic branch.
-1. Signing the Developer Certificate of Origin (DCO)
-1. Pull requests will be reviewed by one of the maintainers who may discuss, offer constructive feedback, request changes, or approve
-the work. For more information see the Code review guideline.
-1. Upon receiving the sign-off of one of the maintainers you may merge your changes, or if you
-   do not have permission to do that, you may request a maintainer to merge it for you.
+### Steps
+
+1. [Fork the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo) to your own GitHub account
+2. Clone your fork and create a feature branch (see [Git Branching](#git-branching))
+3. Make your changes and add or update tests as needed
+3. Run `poe all --check` and ensure all checks pass:
+   - REUSE license compliance
+   - Linting and formatting (ruff)
+   - Type checking (pyright)
+   - Tests (pytest)
+   - Doctests
+4. Sign your commits (see [DCO](#signing-the-developer-certificate-of-origin-dco))
+5. Push your branch to your fork and open a pull request against `main` in the main repository, following these steps:
+   1. Name your PR as `<type>: <title>` — e.g. `feat: add transformer-based forecasting model`
+   2. Assign yourself to the PR
+   3. Optionally request reviews from specific reviewers
+   4. Add a label to the PR
+   5. Link the relevant issue using "Closes #123" or "Fixes #456" (or select it in the Development section)
+6. A maintainer will review and may request changes; upon approval you may merge (or request a maintainer to merge)
+
+## REUSE Compliance
+
+All files in the repository must be [REUSE compliant](https://reuse.software/). The pipeline automatically checks this; non-compliant files will block the pull request.
+
+Check and fix compliance:
+
+```bash
+poe reuse            # check
+poe reuse --fix      # auto-add missing headers
+```
+
+Alternatively, you can annotate a file manually:
+
+```bash
+reuse annotate \
+  --copyright "Contributors to the OpenSTEF project <openstef@lfenergy.org>" \
+  --license "MPL-2.0" \
+  --fallback-dot-license <path_to_file>
+```
+
+### PR requirements
+
+- `poe all --check` must pass (REUSE compliance, linting, formatting, type checking, tests, doctests)
+- Code coverage must not decrease significantly
+- Documentation must be updated for new features or changed behavior
+- At least one maintainer approval is required
+
+## Code Reviews
+
+All patches and contributions, including those by project members, require review by one of the maintainers. We use GitHub pull requests for this purpose. Consult the [GitHub Help](https://help.github.com/articles/about-pull-requests/) for more information on pull requests.
 
 ## Release Process
-Every new Pull Request merged to main triggers a new automatic github release with bumped patch version (0.0.**1**) and consequently a new pypi release and new published documentation. If needed, a manual release can be done:
-1. Major (**1**.0.0) or minor (0.**1**.0) version need to be bumped besides patch version: do this yourself in the feature branch in the setup.py.
-2. Pre-release needs to be made: do this yourself in the feature branch with new pre-release version in setup.py and manual pre-release in github GUI.
+
+New releases are created manually by a maintainer from the `main` branch. There are no automatic releases triggered by merged pull requests.
 
 ## Attribution
 
-This Contributing.md is adapted from Google
-available at
-https://github.com/google/new-project/blob/master/docs/contributing.md
+This Contributing.md is adapted from the OpenSTEF contributing documentation.
