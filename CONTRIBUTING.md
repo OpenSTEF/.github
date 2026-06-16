@@ -172,7 +172,7 @@ AI tools (e.g. LLMs or coding assistants) can be helpful when contributing to Op
 
 ### Transparency
 - If AI played a significant role, please disclose this in your pull request or commit message   (e.g. `Assisted-by: <tool name>`)  
-- Minor uses (e.g. fixing grammar or formatting) do not need to be mentioned  
+- If AI is only used for fixing grammar or formatting, it does not need to be mentioned
 
 ### Quality standards
 AI-assisted contributions must meet the same standards as any other contribution:
