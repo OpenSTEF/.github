@@ -4,7 +4,7 @@
 [![Downloads](https://static.pepy.tech/badge/openstef)](https://pepy.tech/project/openstef)
 [![Downloads](https://static.pepy.tech/badge/openstef/month)](https://pepy.tech/project/openstef)
 
-OpenSTEF is an open-source Python package for probabilistic short-term energy forecasting. It provides automated machine learning workflows to deliver accurate forecasts of the load on the grid for any horizon, typically from hours to days ahead. Infused with expert energy knowledge, the package incorporates external predictors such as weather data and market prices, ensuring validation and training of machine learning models to provide precise, probabilistic load predictions.
+OpenSTEF is an open-source Python package for probabilistic short-term energy forecasting. It provides automated machine learning workflows to deliver accurate and explainable forecasts of the load on the grid for any horizon, typically from hours to days ahead. Infused with expert energy knowledge, the package incorporates external predictors such as weather data and market prices, ensuring validation and training of machine learning models to provide precise, probabilistic load predictions.
 
 # Table of Contents
 - [External information sources](#external-information-sources)
@@ -44,7 +44,7 @@ Please read [CODE_OF_CONDUCT.md](https://github.com/OpenSTEF/.github/blob/main/C
 Please read [SUPPORT.md](https://github.com/OpenSTEF/.github/blob/main/SUPPORT.md) for how to connect and get into contact with the OpenSTEF project.
 
 
-## External information sources
+## Sources
 - [Documentation](https://openstef.github.io/openstef/index.html)
 - [Python package](https://pypi.org/project/openstef/)
 - [Project website](https://www.lfenergy.org/projects/openstef/)
