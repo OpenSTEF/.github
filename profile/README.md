@@ -1,10 +1,10 @@
 # OpenSTEF - Open Short Term Energy Forecasting
 [![License: MPL2.0](https://img.shields.io/badge/License-MPL2.0-informational.svg)](https://github.com/openstef/openstef/blob/main/LICENSE)
-[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/5585/badge)](https://bestpractices.coreinfrastructure.org/projects/5585)
+[![CI Best Practices](https://bestpractices.coreinfrastructure.org/projects/5585/badge)](https://bestpractices.coreinfrastructure.org/projects/5585)
 [![Downloads](https://static.pepy.tech/badge/openstef)](https://pepy.tech/project/openstef)
 [![Downloads](https://static.pepy.tech/badge/openstef/month)](https://pepy.tech/project/openstef)
 
-OpenSTEF provides automated machine learning pipelines to deliver accurate and explainable forecasts of the load on the grid for the next 48 hours. Infused with expert energy knowledge, the platform incorporates external predictors such as weather data and market prices, ensuring validation and training of machine learning models to provide precise load predictions.
+OpenSTEF is an open-source Python package for probabilistic short-term energy forecasting. It provides automated machine learning workflows to deliver accurate forecasts of the load on the grid for any horizon, typically from hours to days ahead. Infused with expert energy knowledge, the package incorporates external predictors such as weather data and market prices, ensuring validation and training of machine learning models to provide precise, probabilistic load predictions.
 
 # Table of Contents
 - [External information sources](#external-information-sources)
@@ -14,48 +14,39 @@ OpenSTEF provides automated machine learning pipelines to deliver accurate and e
 - [Contributing](#contributing)
 - [Contact](#contact)
 
-## External information sources
-- [Documentation](https://openstef.github.io/openstef/index.html);
-- [Python package](https://pypi.org/project/openstef/);
-- [Project website](https://www.lfenergy.org/projects/openstef/);
-- [Dashboard documentation](https://raw.githack.com/OpenSTEF/.github/main/profile/html/openstef_dashboard_doc.html);
-- [Linux Foundation project page](https://openstef.github.io/openstef/index.html);
-- [Video about OpenSTEF](https://www.lfenergy.org/forecasting-to-create-a-more-resilient-optimized-grid/);
-- [OpenSTEF Slack channel](https://app.slack.com/huddle/TLU68MTML/C04P56MSM40). 
-
 
 ## Description
 The energy transition poses new challenges to all parties within the energy sector. Grid operators, grappling with the upsurge in renewable energy and heightened electrification, find their grid capacities nearing physical limitations. Therefore, it is imperative to forecast grid load in the upcoming hours to days, enabling the anticipation of local congestion and thereby optimal utilization of existing assets.  
 
-OpenSTEF provides a complete software stack specifically engineered to forecast the load on the electricity grid for the next hours to days. Given a timeseries of measured (net) load or generation, a fully automated machine learning pipeline is executed which delivers a probabilistic forecast of future load. This is applicable to energy consumption, renewable generation, or a combination of the two. OpenSTEF does not stop at forecating: it validates input data, combines measurements with external predictors such as weather data and market prices, trains any scikit-learn compatible machine learning model, and delivers the forecast via both an API and an (expert) graphical user interface. The entire stack, crafted on open-source technology and adhering to standards, is organized in a microservice architecture optimized for cloud-deployment.
+Given a timeseries of measured (net) load or generation, OpenSTEF executes a forecasting workflow that produces probabilistic predictions. This is applicable to energy consumption, renewable generation, or a combination of the two. See the [documentation](https://openstef.github.io/openstef/index.html) for a full feature overview and getting started guide.
 
-The Dutch DSO Alliander started the Short-Term-Forecasting project to anticipate congestion in the distribution grid, to allow for grid safety analysis in the transmission grid and to enable smart grid innovations to locally balance supply and demand within the constraints of the grid. The objective of opensourcing the stack is two-fold: provide an industry standard for generating and evaluating forecasts in the operational time-domain, as well as allow for structured collaboration.
-![Forecast highligts](https://user-images.githubusercontent.com/18208480/127109029-77e09c97-8d06-4158-8789-4c1d5ecede61.png "Example of the OpenSTEF dashboard")
-## Repositories 
-OpenSTEF has different repositories. 
+The Dutch DSO Alliander started the Short Term Forecasting project to anticipate congestion in the distribution grid, to allow for grid safety analysis in the transmission grid and to enable smart grid innovations to locally balance supply and demand within the constraints of the grid. The objective of opensourcing the stack is two-fold: provide an industry standard for generating and evaluating forecasts in the operational time-domain, as well as allow for structured collaboration.
 
-[OpenSTEF](https://github.com/OpenSTEF/openstef): Basis of all the repositories. Automatic machine learning pipelines. Builds the Opensource Short Term Forecasting package. 
+## Repository
 
-[OpenSTEF-dbc](https://github.com/OpenSTEF/openstef-dbc): Provides (company specific) database connector for OpenSTEF package.
+[OpenSTEF](https://github.com/OpenSTEF/openstef): Main repository. Organized as a monorepo with specialized packages for the complete forecasting stack. See the [repository README](https://github.com/OpenSTEF/openstef#readme) for a full overview of packages, installation instructions, and examples.
 
-[OpenSTEF-reference](https://github.com/OpenSTEF/openstef-reference): Deploy the entire OpenSTEF stack on your machine. Provides a reference implementation of the OpenSTEF stack including datamodels, databases and UI.  
-
-[OpenSTEF-offline-example](https://github.com/OpenSTEF/openstef-offline-example): Provides Jupyter Notebooks showing how to use OpenSTEF and apply it's functionality to your usecase.
-
-## Framework features 
-- Prediction job: input configuration for a task or pipeline. It contains for example the location and forecasting horizon.
-- Feature engineering: is called by pipelines to select required features for training/forecasting based on the configuration from the prediction job (e.g. create new features for energy load of yesterday, last week). 
-- Machine learning: is called by pipelines to perform training, forecasting, or evaluation based on the configuration from the prediction job (e.g. train an XGB quantile model).
-- Pipelines: OpenSTEF contains automated machine learning pipelines. Can be called to perform training, forecasting or evaluating by giving input data to the pipeline.
-- Data validation: called by pipelines to validate data. 
-- Confidence estimates: there are two methods for confidence estimation: quantile regression and standard deviation.  
-- Energy splitting: ability to split the load forecast into solar, wind and load. Uses the Domain Adaption for Zero Shot Learning in Sequence (DAZLS), which is a technique which transfers knowledge from complete information substations to incomplete information substations. 
+## Features
+- Workflows: automated machine learning workflows encapsulating the full train/predict cycle: preprocessing, model training and inference, and postprocessing. Configured via a workflow config specifying model type, forecast horizons, quantiles, location metadata, and feature engineering settings.
+- Feature engineering: a modular transform system constructing features for training and forecasting, including time-based lags, rolling aggregates, weather features, and holiday indicators.
+- Machine learning: multiple built-in models including XGBoost, LightGBM, and linear gradient boosting variants.
+- Data validation: checks input data for completeness, flatline periods, and consistency before training or forecasting.
+- Probabilistic forecasting: forecasts are delivered as quantile predictions across configurable confidence levels, providing uncertainty estimates alongside the central prediction.
+- Energy splitting: ability to split the load forecast into solar, wind and load components, using a pluggable component splitter framework.
 
 ## License
-This project is licensed under the Mozilla Public License, version 2.0.
+This project is [licensed](https://github.com/OpenSTEF/.github/blob/main/LICENSE) under the Mozilla Public License, version 2.0.
 
 ## Contributing
-Please read [CODE_OF_CONDUCT.md](https://github.com/OpenSTEF/.github/blob/main/CODE_OF_CONDUCT.md), [CONTRIBUTING.md](https://github.com/OpenSTEF/.github/blob/main/CONTRIBUTING.md) and [PROJECT_GOVERNANACE.md](https://github.com/OpenSTEF/.github/blob/main/PROJECT_GOVERNANCE.md) for details on the process for submitting pull requests to us.
+Please read [CODE_OF_CONDUCT.md](https://github.com/OpenSTEF/.github/blob/main/CODE_OF_CONDUCT.md), [CONTRIBUTING.md](https://github.com/OpenSTEF/.github/blob/main/CONTRIBUTING.md) and [PROJECT_GOVERNANCE.md](https://github.com/OpenSTEF/.github/blob/main/PROJECT_GOVERNANCE.md) for details on the process for submitting pull requests to us.
 
 ## Contact
-Please read [SUPPORT.md](https://github.com/OpenSTEF/.github/blob/main/SUPPORT.md) for how to connect and get into contact with the OpenSTEF project
+Please read [SUPPORT.md](https://github.com/OpenSTEF/.github/blob/main/SUPPORT.md) for how to connect and get into contact with the OpenSTEF project.
+
+
+## External information sources
+- [Documentation](https://openstef.github.io/openstef/index.html)
+- [Python package](https://pypi.org/project/openstef/)
+- [Project website](https://www.lfenergy.org/projects/openstef/)
+- [Video about OpenSTEF](https://www.lfenergy.org/forecasting-to-create-a-more-resilient-optimized-grid/)
+- [OpenSTEF Slack channel](https://slack.lfenergy.org/)
