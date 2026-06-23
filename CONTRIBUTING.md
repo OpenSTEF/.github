@@ -22,6 +22,27 @@ Contribution does not necessarily mean committing code. We recognize different l
 
 A good place to start is to look at issues with the [`good first issue`](https://github.com/OpenSTEF/openstef/labels/good%20first%20issue) label.
 
+## New Contributors
+
+Everyone comes to the project from a different place — in terms of experience and interest — so there is no one-size-fits-all path to getting involved. There are a few typical new contributor profiles:
+
+- **You are an OpenSTEF user and you see a bug, a potential improvement, or something that annoys you, and you can fix it.** Search the [issue tracker](https://github.com/OpenSTEF/openstef/issues) for an existing issue, or open a new one to discuss the best approach before you start.
+- **You are a domain expert** in forecasting, machine learning, energy systems, or time series analysis. Maintainers can help you figure out the best implementation; open an issue or a [draft pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request#converting-a-pull-request-to-a-draft) to request early feedback.
+- **You are new to OpenSTEF, both as a user and a contributor.** Understanding the whole codebase is a long-term project and nobody expects you to do this right away. Pick an area to focus on (models, feature engineering, evaluation, etc.) and read the issues and pull requests touching that subject to gain context.
+
+### First contributions
+
+If this is your first open source contribution, or your first time contributing to OpenSTEF:
+
+1. Navigate to the [issues page](https://github.com/OpenSTEF/openstef/issues/).
+2. Filter by the [`good first issue`](https://github.com/OpenSTEF/openstef/labels/good%20first%20issue) label to find beginner-friendly, well-documented tasks that do not require deep knowledge of the internals.
+3. Pick an issue and check whether a pull request already exists for it. A good way to judge if an issue is suitable is to ask yourself: "Can I independently submit a PR in 1–2 weeks?"
+4. If a PR already exists, consider collaborating with the author by reviewing or commenting rather than opening a duplicate. If none exists, open a [draft pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests) and follow the [Pull Request Process](#pull-request-process).
+
+### Choosing an issue
+
+In general, the OpenSTEF project does not assign issues. Issues are "claimed" by opening a PR; there is no other assignment mechanism. If you open such a PR, please comment on the issue thread to avoid duplication of work. If an existing PR is stalled and the original author is unresponsive, feel free to open a new PR referencing the old one.
+
 ## Filing Bugs and Change Requests
 
 You can file bugs and change requests via [GitHub Issues](https://github.com/OpenSTEF/openstef/issues). Consult [GitHub Help](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue) for more information on using GitHub issues.
@@ -36,6 +57,10 @@ This project follows the [Code of Conduct](https://github.com/OpenSTEF/.github/b
 - **Issues**: [GitHub Issues](https://github.com/OpenSTEF/openstef/issues)
 - **Email**: openstef@lfenergy.org
 - **Community meetings**: Join our four-weekly co-coding sessions
+
+### Four-weekly co-coding meetings
+
+Every four weeks, we host co-coding meetings to work together on OpenSTEF development, discuss the project roadmap, and support new contributors. Anyone can attend, whether you're a seasoned contributor or just getting started. They are a great opportunity to get real-time help with your contributions, collaborate on complex issues, learn about the project architecture, and meet other community members. You can find meeting information and calendar invites on our [LF Energy wiki page](https://lf-energy.atlassian.net/wiki/spaces/OS/pages/32278358/Four-weekly+community+meeting).
 
 ## Style Guide
 
@@ -114,20 +139,20 @@ Contributions should be submitted as GitHub pull requests. See [Creating a pull 
 1. [Fork the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo) to your own GitHub account
 2. Clone your fork and create a feature branch (see [Git Branching](#git-branching))
 3. Make your changes and add or update tests as needed
-3. Run `poe all --check` and ensure all checks pass:
+4. Run `poe all --check` and ensure all checks pass:
    - REUSE license compliance
    - Linting and formatting (ruff)
-   - Type checking (pyright)
+   - Type checking (ty)
    - Tests (pytest)
    - Doctests
-4. Sign your commits (see [DCO](#signing-the-developer-certificate-of-origin-dco))
-5. Push your branch to your fork and open a pull request against `main` in the main repository, following these steps:
+5. Sign your commits (see [DCO](#signing-the-developer-certificate-of-origin-dco))
+6. Push your branch to your fork and open a pull request against `main` in the main repository, following these steps:
    1. Name your PR as `<type>: <title>` — e.g. `feat: add transformer-based forecasting model`
    2. Assign yourself to the PR
    3. Optionally request reviews from specific reviewers
    4. Add a label to the PR
    5. Link the relevant issue using "Closes #123" or "Fixes #456" (or select it in the Development section)
-6. A maintainer will review and may request changes; upon approval you may merge (or request a maintainer to merge)
+7. A maintainer will review and may request changes; upon approval you may merge (or request a maintainer to merge)
 
 ## REUSE Compliance
 
