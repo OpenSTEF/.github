@@ -4,205 +4,301 @@ SPDX-FileCopyrightText: 2017-2025 Contributors to the OpenSTEF project <openstef
 SPDX-License-Identifier: MPL-2.0
 -->
 
-# How to Contribute
+# Contributing guide
 
-We'd love to accept contributions to this project in any form.
-You do not need to be a forecasting or energy systems expert to make a contribution.
-There are just a few small guidelines you need to follow before making a change.
+You've discovered a bug or something else you want to change in OpenSTEF — excellent!
 
-## Ways to Contribute
+You've worked out a way to fix it — even better!
 
-Contribution does not necessarily mean committing code. We recognize different levels of contribution in increasing order of dedication:
+You want to tell us about it — best of all!
 
-1. Test and use the library — give feedback on the user experience or suggest new features
-2. Report bugs
-3. Improve documentation — fix typos, clarify docstrings, write examples or tutorials
-4. Fix bugs or implement features — see [Pull Request Process](#pull-request-process)
-5. Participate in the community — join our four-weekly co-coding meetings or Slack discussions
+Below, you can find a number of ways to contribute, and how to connect with the
+OpenSTEF community.
 
-A good place to start is to look at issues with the [`good first issue`](https://github.com/OpenSTEF/openstef/labels/good%20first%20issue) label.
+## Ways to contribute
 
-## Filing Bugs and Change Requests
+<details open>
+<summary>Do I really have something to contribute to OpenSTEF?</summary>
 
-You can file bugs and change requests via [GitHub Issues](https://github.com/OpenSTEF/openstef/issues). Consult [GitHub Help](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue) for more information on using GitHub issues.
+100% yes! There are so many ways to contribute to our community. Take a look
+at the following sections to learn more.
 
-## Community Guidelines
+There are a few typical new contributor profiles:
 
-This project follows the [Code of Conduct](https://github.com/OpenSTEF/.github/blob/main/CODE_OF_CONDUCT.md).
+* **You are an OpenSTEF user, and you see a bug, a potential improvement, or
+  something that annoys you, and you can fix it.**
 
-## Getting Help
+  You can search our issue tracker for an existing issue that describes your problem or
+  open a new issue to inform us of the problem you observed and discuss the best approach
+  to fix it. If your contributions would not be captured on GitHub (social media,
+  communication, educational content), you can also reach out to us on our
+  [LF Energy Slack workspace](https://slack.lfenergy.org/) (#openstef channel) or attend our four-weekly
+  co-coding meetings.
 
-- **Slack**: [LF Energy Slack workspace](https://slack.lfenergy.org/) (#openstef channel)
-- **Issues**: [GitHub Issues](https://github.com/OpenSTEF/openstef/issues)
-- **Email**: openstef@lfenergy.org
-- **Community meetings**: Join our four-weekly co-coding sessions
+* **You are not a regular OpenSTEF user but a domain expert: you know about
+  forecasting, machine learning, energy systems, time series analysis, or some
+  other field where OpenSTEF could be improved.**
 
-## Style Guide
+  Awesome — you have a focus on a specific application and domain and can
+  start there. In this case, maintainers can help you figure out the best
+  implementation; open an issue or pull request with a starting point, and we'll
+  be happy to discuss technical approaches.
 
-OpenSTEF uses [Ruff](https://docs.astral.sh/ruff/) to enforce Python code style and formatting. If the code format is not complying, the pipeline will fail and the pull request will be blocked.
+  If you prefer, you can use the [GitHub functionality for "draft" pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request#converting-a-pull-request-to-a-draft)
+  and request early feedback on whatever you are working on.
 
-Run `poe all` to automatically check and fix formatting, linting, and type issues before committing. For full details on conventions, see the [style guide](https://openstef.github.io/openstef/contribute/code_style_guide.html).
+* **You are new to OpenSTEF, both as a user and contributor, and want to start
+  contributing but have yet to develop a particular interest.**
 
-## Git Branching
+  Having some previous experience with forecasting or energy systems can be very
+  helpful when making open-source contributions. It helps you understand why
+  things are the way they are and how they *should* be. Having first-hand
+  experience and context is valuable both for what you can bring to the
+  conversation and to understand where other people are coming from.
 
-This project uses the [GitHub flow](https://guides.github.com/introduction/flow/) branching model. The `main` branch always contains the latest release. Feature branches are created from `main` and merged back via a Pull Request.
+  Understanding the entire codebase is a long-term project, and nobody expects
+  you to do this right away. If you are determined to get started with
+  OpenSTEF and want to learn, going through the basic functionality,
+  choosing something to focus on (models, feature engineering, evaluation, etc.)
+  and gaining context on this area by reading the issues and pull requests
+  touching these subjects is a reasonable approach.
 
-In case of a major version release with new features and/or breaking changes, a temporary `release/` branch may be created to hold all the changes until they are merged into `main`.
+</details>
 
-### Branch naming
+### Code
 
-Use descriptive names following these patterns:
+You want to implement a feature or fix a bug or help with maintenance - much
+appreciated! Our library source code is found in:
 
-| Type | Pattern | Example |
-|------|---------|---------|
-| New feature | `feat/<issue>-<description>` | `feat/123-add-transformer-model` |
-| Bug fix | `fix/<issue>-<description>` | `fix/456-handle-missing-weather-data` |
-| Documentation | `docs/<issue>-<description>` | `docs/789-improve-installation-guide` |
-| Refactoring | `refactor/<description>` | `refactor/cleanup-feature-engineering` |
-| Performance | `perf/<description>` | `perf/optimize-forecasting-pipeline` |
+* Core forecasting models: `packages/openstef-models/`
+* Evaluation and analysis: `packages/openstef-beam/`
+* Core utilities, dataset types, and shared functionality: `packages/openstef-core/`
+* Examples and tutorials: `examples/`
+* Tests: `packages/*/tests/`
 
-Include the GitHub issue number when one is available.
+Because many people use and work on OpenSTEF, we have guidelines for keeping
+our code consistent and mitigating the impact of changes.
 
-## Commit Message Guidelines
+* [Code style guide](https://openstef.github.io/openstef/contribute/code_style_guide.html) - Coding standards and conventions (including logging practices)
+* [Development workflow](https://openstef.github.io/openstef/contribute/development_workflow.html) - Pull request workflow and guidelines
+* [Documentation guidelines](https://openstef.github.io/openstef/contribute/document.html) - Documentation writing guidelines
 
-OpenSTEF uses [Conventional Commits](https://www.conventionalcommits.org/) for structured commit messages. This enables automated changelog generation and semantic versioning.
+Code is contributed through pull requests, so we recommend that you start at
+[Start a pull request](#start-a-pull-request). If you get stuck, please reach out on the
+[LF Energy Slack workspace](https://slack.lfenergy.org/) (#openstef channel) or join our four-weekly co-coding meetings.
 
-**Format:** `<type>[optional scope]: <description>`
+### Documentation
 
-**Types:** `feat`, `fix`, `docs`, `style`, `refactor`, `perf`, `test`, `build`, `ci`, `chore`, `revert`
+You, as an end-user of OpenSTEF can make a valuable contribution because you can
+more clearly see the potential for improvement than a core developer. For example,
+you can:
 
-**Examples:**
+- Fix a typo
+- Clarify a docstring
+- Write or update an [example](https://openstef.github.io/openstef/examples.html)
+- Write or update a [tutorial](https://openstef.github.io/openstef/tutorials.html)
+- Improve the getting started guide
+- Add forecasting domain expertise to documentation
 
-```bash
-git commit -m "feat(models): add transformer-based forecasting model"
-git commit -m "fix(validation): handle missing weather data gracefully
+Our code is documented inline in the source code files in `packages`.
+Our website structure mirrors our folder structure, meaning that a narrative
+document's URL roughly corresponds to its location in our folder structure:
 
-Fixes #456"
-```
+*Using the library:*
 
-**Guidelines:**
+- `examples/examples/`
+- `examples/tutorials/`
+- `docs/source/api/`
 
-- Use the imperative mood ("Add feature" not "Added feature")
-- Keep the first line under 50 characters
-- Reference issues with "Closes #123" or "Fixes #456"
-- Use `!` after the type to indicate breaking changes (e.g. `feat!:`)
+*Information about the library:*
 
-## Signing the Developer Certificate of Origin (DCO)
+- `docs/source/user_guide/`
+- `docs/source/project/`
+- `docs/source/contribute/`
 
-This project uses a [Developer Certificate of Origin, Version 1.1](http://developercertificate.org/) to ensure that each commit was written by the author or that the author has the appropriate rights to contribute the change.
+Instructions and guidelines for contributing documentation are found in:
 
-Each commit must include a sign-off line:
+* [Documentation guidelines](https://openstef.github.io/openstef/contribute/document.html)
+* [Code style guide](https://openstef.github.io/openstef/contribute/code_style_guide.html)
 
-```
-Signed-off-by: Joe Smith <joe.smith@email.com>
-```
+Documentation is contributed through pull requests, so we recommend that you start
+at [Start a pull request](#start-a-pull-request). If that feels intimidating, we encourage you to
+[open an issue](https://github.com/OpenSTEF/openstef/issues/new/choose) describing what improvements you would make. If you get stuck,
+please reach out on the [LF Energy Slack workspace](https://slack.lfenergy.org/)
+(#openstef channel) or see our [support](https://openstef.github.io/openstef/project/support.html) page for more ways to connect.
 
-The project requires your real name and real email address. Anonymous contributions and pseudonyms are not accepted.
+### Community
 
-**How to sign off:**
+OpenSTEF's community is built by its members! You can help by:
 
-- Use `git commit -s` or `git commit --signoff` to add the line automatically (requires `user.name` and `user.email` to be set in your git config)
-- [GitHub UI integration](https://github.com/scottrigby/dco-gh-ui) for browser-based commits
-- Add a `prepare-commit-msg` hook in `.git/hooks/` — see [this example](https://github.com/Samsung/ONE-vscode/wiki/ONE-vscode-Developer's-Certificate-of-Origin)
+* Participating in our four-weekly community meetings (see [support](https://openstef.github.io/openstef/project/support.html))
+* Joining discussions on the [LF Energy Slack workspace](https://slack.lfenergy.org/) (#openstef channel)
+* Contributing to documentation and examples
 
-## Pull Request Process
+It helps us if you spread the word: reference the project from your blog
+and articles or link to it from your website!
 
-Contributions should be submitted as GitHub pull requests. See [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) if you're unfamiliar with this concept.
+If OpenSTEF contributes to a project that leads to a scientific publication,
+please cite us following the [citing](https://openstef.github.io/openstef/project/citing.html) guidelines.
 
-### Steps
+If you have developed an extension to OpenSTEF, please consider adding it to our
+ecosystem or creating a tutorial showing how to integrate it.
 
-1. [Fork the repository](https://docs.github.com/en/get-started/quickstart/fork-a-repo) to your own GitHub account
-2. Clone your fork and create a feature branch (see [Git Branching](#git-branching))
-3. Make your changes and add or update tests as needed
-3. Run `poe all --check` and ensure all checks pass:
-   - REUSE license compliance
-   - Linting and formatting (ruff)
-   - Type checking (pyright)
-   - Tests (pytest)
-   - Doctests
-4. Sign your commits (see [DCO](#signing-the-developer-certificate-of-origin-dco))
-5. Push your branch to your fork and open a pull request against `main` in the main repository, following these steps:
-   1. Name your PR as `<type>: <title>` — e.g. `feat: add transformer-based forecasting model`
-   2. Assign yourself to the PR
-   3. Optionally request reviews from specific reviewers
-   4. Add a label to the PR
-   5. Link the relevant issue using "Closes #123" or "Fixes #456" (or select it in the Development section)
-6. A maintainer will review and may request changes; upon approval you may merge (or request a maintainer to merge)
+## New contributors
 
-## REUSE Compliance
+Everyone comes to the project from a different place — in terms of experience
+and interest — so there is no one-size-fits-all path to getting involved. We
+recommend looking at existing issue or pull request discussions, and following
+the conversations during pull request reviews to get context. Or you can
+deep-dive into a subset of the code-base to understand what is going on.
 
-All files in the repository must be [REUSE compliant](https://reuse.software/). The pipeline automatically checks this; non-compliant files will block the pull request.
+### Four-weekly co-coding meetings
 
-Check and fix compliance:
+Every four weeks, we host co-coding meetings to work together on OpenSTEF development,
+discuss project roadmap, and support new contributors. Anyone can attend, whether
+you're a seasoned contributor or just getting started. These meetings are a great
+opportunity to:
 
-```bash
-poe reuse            # check
-poe reuse --fix      # auto-add missing headers
-```
+* Get real-time help with your contributions
+* Collaborate on complex issues
+* Learn about the project architecture
+* Meet other community members
+* Discuss upcoming features and priorities
 
-Alternatively, you can annotate a file manually:
+You can find meeting information and calendar invites on our
+[LF Energy wiki page](https://lf-energy.atlassian.net/wiki/spaces/OS/pages/32278358/Four-weekly+community+meeting).
+We encourage joining these meetings to get to know the people behind the GitHub handles 😉.
 
-```bash
-reuse annotate \
-  --copyright "Contributors to the OpenSTEF project <openstef@lfenergy.org>" \
-  --license "MPL-2.0" \
-  --fallback-dot-license <path_to_file>
-```
+### Good first issues
 
-### PR requirements
+While any contributions are welcome, we have marked some issues as
+particularly suited for new contributors by the label [good first issue](https://github.com/OpenSTEF/openstef/labels/good%20first%20issue). These
+are well documented issues, that do not require a deep understanding of the
+internals of OpenSTEF and are a great way to get started with contributing
+to the project.
 
-- `poe all --check` must pass (REUSE compliance, linting, formatting, type checking, tests, doctests)
-- Code coverage must not decrease significantly
-- Documentation must be updated for new features or changed behavior
-- At least one maintainer approval is required
+### First contributions
 
-## Code Reviews
+If this is your first open source contribution, or your first time contributing to OpenSTEF,
+and you need help or guidance finding a good first issue, look no further. This section will
+guide you through each step:
 
-All patches and contributions, including those by project members, require review by one of the maintainers. We use GitHub pull requests for this purpose. Consult the [GitHub Help](https://help.github.com/articles/about-pull-requests/) for more information on pull requests.
+1. Navigate to the [issues page](https://github.com/OpenSTEF/openstef/issues/).
+2. Filter labels with ["good first issue"](https://github.com/OpenSTEF/openstef/labels/good%20first%20issue) to find beginner-friendly tasks.
+3. Click on an issue you would like to work on, and check to see if the issue has a pull request opened to resolve it.
 
-## AI‑Assisted Contributions 
-AI tools (e.g. LLMs or coding assistants) can be helpful when contributing to OpenSTEF. We welcome their use, as long as contributions remain clear, maintainable, and aligned with the following guidelines.
+   * A good way to judge if you chose a suitable issue is by asking yourself, "Can I independently submit a PR in 1-2 weeks?"
+4. Check existing pull requests and filter by the issue number to make sure the issue is not already in progress.
 
-> **_NOTE:_**  These guidelines on using AI tools are still in development and will likely be extended over time.
+   * If the issue has a pull request (is in progress), you can ask to collaborate with the existing contributor.
+   * If a pull request does not exist, create a [draft pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests) and follow our pull request guidelines.
+5. Please familiarize yourself with our contribution workflow and ensure you understand
+   the development setup process before starting your work.
+
+## Get connected
+
+When in doubt, we recommend going together! Get connected with our community of
+active contributors, many of whom felt just like you when they started out and
+are happy to welcome you and support you as you get to know how we work, and
+where things are.
+
+## Getting help
+
+If you need assistance:
+
+* 💬 **Slack**: Join the [LF Energy Slack workspace](https://slack.lfenergy.org/) (#openstef channel)
+* 🐛 **Issues**: Check [GitHub Issues](https://github.com/OpenSTEF/openstef/issues) or create a new one
+* 📧 **Email**: Contact us at `openstef@lfenergy.org`
+* 🤝 **Community meetings**: Join our four-weekly co-coding sessions
+
+For more information, see our [support](https://openstef.github.io/openstef/project/support.html) page.
+
+## Choose an issue
+
+In general, the OpenSTEF project does not assign issues. Issues are
+"assigned" or "claimed" by opening a PR; there is no other assignment
+mechanism. If you have opened such a PR, please comment on the issue thread to
+avoid duplication of work. Please check if there is an existing PR for the
+issue you are addressing. If there is, try to work with the author by
+submitting reviews of their code or commenting on the PR rather than opening
+a new PR; duplicate PRs are subject to being closed. However, if the existing
+PR is stalled and the original author is unresponsive, feel free to open a new PR
+referencing the old one.
+
+## Start a pull request
+
+The preferred way to contribute to OpenSTEF is to fork the [main
+repository](https://github.com/OpenSTEF/openstef/) on GitHub,
+then submit a "pull request" (PR). To work on a pull request:
+
+1. **First** set up a development environment by following the instructions in
+   [development setup](https://openstef.github.io/openstef/contribute/development_setup.html)
+
+2. **Then** start solving the issue, following the guidance in
+   [development workflow](https://openstef.github.io/openstef/contribute/development_workflow.html)
+
+3. **As part of verifying your changes** check that your contribution meets
+   the pull request guidelines and then open a pull request.
+
+4. **Finally** follow up with maintainers on the PR if waiting more than a few days for
+   feedback. Update the pull request as needed.
+
+If you have questions of any sort, reach out on the [LF Energy Slack workspace](https://slack.lfenergy.org/) (#openstef channel) and consider
+joining our [four-weekly co-coding meetings](#four-weekly-co-coding-meetings).
+
+## AI-assisted contributions
+
+AI tools (e.g. LLMs or coding assistants) can be helpful when contributing to
+OpenSTEF. We welcome their use, as long as contributions remain clear,
+maintainable, and aligned with the following guidelines.
+
+> **Note:** These guidelines on using AI tools are still in development and will
+> likely be extended over time.
 
 ### General expectations
-- You remain fully responsible for your contribution, regardless of AI usage  
-- You should understand and be able to explain the code you submit  
-- Treat AI as a support tool, not as an autonomous contributor  
+
+- You remain fully responsible for your contribution, regardless of AI usage
+- You should understand and be able to explain the code you submit
+- Treat AI as a support tool, not as an autonomous contributor
 
 ### Transparency
-- If AI played a significant role, please disclose this in your pull request or commit message   (e.g. `Assisted-by: <tool name>`)  
+
+- If AI played a significant role, please disclose this in your pull request
+  or commit message (e.g. `Assisted-by: <tool name>`)
 - If AI is only used for fixing grammar or formatting, it does not need to be mentioned
 
 ### Quality standards
+
 AI-assisted contributions must meet the same standards as any other contribution:
 
-- Include tests where applicable  
-- Update documentation if needed  
-- Follow coding style and project conventions (`poe all`)  
-- Clearly describe the problem and your approach  
+- Include tests where applicable
+- Update documentation if needed
+- Follow coding style and project conventions (`poe all`)
+- Clearly describe the problem and your approach
 
-Please make sure to review and validate all generated code. AI tools can produce incorrect, outdated, or insecure patterns.
+Please make sure to review and validate all generated code. AI tools can
+produce incorrect, outdated, or insecure patterns.
 
 ### Scope and collaboration
-- Prefer small, well-scoped pull requests that are easy to review  
-- Engage with maintainers via issues if your change is substantial  
-- Avoid submitting large or bulk-generated changes without prior discussion, as they may be rejected.
+
+- Prefer small, well-scoped pull requests that are easy to review
+- Engage with maintainers via issues if your change is substantial
+- Avoid submitting large or bulk-generated changes without prior discussion,
+  as they may be rejected
 
 ### Security and licensing
-- Review generated code for potential vulnerabilities  
-- Ensure compliance with project licensing and proper attribution of reused content  
+
+- Review generated code for potential vulnerabilities
+- Ensure compliance with project licensing and proper attribution of reused
+  content
 
 ### AI agents
-Autonomous agents or bots are not typical contributors to this project. 
+
+Autonomous agents or bots are not typical contributors to this project.
+
 - If you plan to use an AI agent, discuss this with the maintainers first
-- AI agents should identify themselves as AI  
-- AI agents that generate low-value or disruptive contributions may be restricted or blocked
+- AI agents should identify themselves as AI
+- AI agents that generate low-value or disruptive contributions may be
+  restricted or blocked
 
-## Release Process
 
-New releases are created manually by a maintainer from the `main` branch. There are no automatic releases triggered by merged pull requests.
-
-## Attribution
-
-This Contributing.md is adapted from the OpenSTEF contributing documentation.
