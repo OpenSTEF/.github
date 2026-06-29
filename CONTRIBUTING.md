@@ -246,6 +246,23 @@ then submit a "pull request" (PR). To work on a pull request:
 If you have questions of any sort, reach out on the [LF Energy Slack workspace](https://slack.lfenergy.org/) (#openstef channel) and consider
 joining our [four-weekly co-coding meetings](#four-weekly-co-coding-meetings).
 
+### Signing the Developer Certificate of Origin (DCO)
+
+This project uses a [Developer Certificate of Origin, Version 1.1](http://developercertificate.org/) to ensure that each commit was written by the author or that the author has the appropriate rights to contribute the change.
+
+Each commit must include a sign-off line:
+
+```
+Signed-off-by: Joe Smith <joe.smith@email.com>
+```
+
+The project requires your real name and real email address. Anonymous contributions and pseudonyms are not accepted.
+
+**How to sign off:**
+
+- Use `git commit -s` or `git commit --signoff` to add the line automatically (requires `user.name` and `user.email` to be set in your git config)
+- GitHub UI integration for browser-based commits
+
 ## AI-assisted contributions
 
 AI tools (e.g. LLMs or coding assistants) can be helpful when contributing to
