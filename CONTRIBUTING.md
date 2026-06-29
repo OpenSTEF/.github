@@ -262,7 +262,6 @@ The project requires your real name and real email address. Anonymous contributi
 
 - Use `git commit -s` or `git commit --signoff` to add the line automatically (requires `user.name` and `user.email` to be set in your git config)
 - GitHub UI integration for browser-based commits
-- Add a `prepare-commit-msg` hook in `.git/hooks/` — see [this example](https://github.com/Samsung/ONE-vscode/wiki/ONE-vscode-Developer's-Certificate-of-Origin)
 
 ## AI-assisted contributions
 
