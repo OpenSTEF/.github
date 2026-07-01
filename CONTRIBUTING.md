@@ -87,6 +87,18 @@ Code is contributed through pull requests, so we recommend that you start at
 [Start a pull request](#start-a-pull-request). If you get stuck, please reach out on the
 [LF Energy Slack workspace](https://slack.lfenergy.org/) (#openstef channel) or join our four-weekly co-coding meetings.
 
+#### Tests
+
+OpenSTEF relies on automated tests to keep the library reliable as it grows, so
+testing is a required part of contributing code. Whenever you add significant new
+functionality, it must come with tests that cover the new behavior in the same
+pull request. Bug fixes are best paired with a regression test that would have caught the problem.
+
+Tests live in `packages/*/tests/` and run automatically in continuous
+integration. See the
+[development workflow](https://openstef.github.io/openstef/contribute/development_workflow.html)
+for how to run the test suite locally before opening your pull request.
+
 ### Documentation
 
 You, as an end-user of OpenSTEF can make a valuable contribution because you can
@@ -237,8 +249,10 @@ then submit a "pull request" (PR). To work on a pull request:
 2. **Then** start solving the issue, following the guidance in
    [development workflow](https://openstef.github.io/openstef/contribute/development_workflow.html)
 
-3. **As part of verifying your changes** check that your contribution meets
-   the pull request guidelines and then open a pull request.
+3. **As part of verifying your changes** add tests for any major new
+   functionality to the automated test suite (see [Tests](#tests)), check that
+   your contribution meets the pull request guidelines, and then open a pull
+   request.
 
 4. **Finally** follow up with maintainers on the PR if waiting more than a few days for
    feedback. Update the pull request as needed.
