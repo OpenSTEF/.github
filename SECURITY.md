@@ -53,8 +53,8 @@ apply.
 Please report security vulnerabilities privately via GitHub's
 [Private Vulnerability Reporting](https://github.com/OpenSTEF/openstef/security/advisories/new)
 or by emailing <openstef@lfenergy.org>. Do not open public issues for
-security-sensitive reports. We aim to acknowledge reports within five working
-days and coordinate a fix before public disclosure.
+security-sensitive reports. The maintainers actively monitor reports and respond
+at the earliest opportunity, coordinating a fix before public disclosure.
 
 ## Verifying releases
 
@@ -106,6 +106,10 @@ and run genuine, unmodified releases, and that known vulnerabilities in its
 dependencies are surfaced and fixed promptly. OpenSTEF does not store user
 credentials and does not operate a network service; runtime hardening of any
 service that embeds OpenSTEF is the responsibility of the deploying application.
+The security of the data supplied to OpenSTEF, including protection against data
+poisoning and other downstream data-integrity issues, rests with the user; our
+responsibility is to keep the package itself as secure as we can, as described
+below.
 
 The threats we address and how we address them:
 
