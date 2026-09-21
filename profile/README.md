@@ -48,4 +48,5 @@ Please read [SUPPORT.md](https://github.com/OpenSTEF/.github/blob/main/SUPPORT.m
 - [Documentation](https://openstef.github.io/openstef/index.html)
 - [Python package](https://pypi.org/project/openstef/)
 - [Project website](https://www.lfenergy.org/projects/openstef/)
+- [Foundation models and datasets](https://huggingface.co/OpenSTEF)
 - [OpenSTEF Slack channel](https://slack.lfenergy.org/)
