@@ -14,7 +14,6 @@ OpenSTEF is an open-source Python package for probabilistic short-term energy fo
 - [Contributing](#contributing)
 - [Contact](#contact)
 
-
 ## Description
 The energy transition poses new challenges to all parties within the energy sector. Grid operators, grappling with the upsurge in renewable energy and heightened electrification, find their grid capacities nearing physical limitations. Therefore, it is imperative to forecast grid load in the upcoming hours to days, enabling the anticipation of local congestion and thereby optimal utilization of existing assets.  
 
@@ -48,4 +47,4 @@ Please read [SUPPORT.md](https://github.com/OpenSTEF/.github/blob/main/SUPPORT.m
 - [Documentation](https://openstef.github.io/openstef/index.html)
 - [Python package](https://pypi.org/project/openstef/)
 - [Project website](https://www.lfenergy.org/projects/openstef/)
-- [OpenSTEF Slack channel](https://slack.lfenergy.org/)
+- [OpenSTEF Slack channel](https://slack.lfenergy.org/) ([Instructions to join the LF Energy Slack](https://tac.lfenergy.org/tools/slack.html)) 
