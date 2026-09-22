@@ -1,93 +1,335 @@
 <!--
-SPDX-FileCopyrightText: 2017-2021 Alliander N.V. <openstef@lfenergy.org>
+SPDX-FileCopyrightText: 2017-2025 Contributors to the OpenSTEF project <openstef@lfenergy.org>
 
 SPDX-License-Identifier: MPL-2.0
 -->
 
-# How to Contribute
+# Contributing guide
 
-We'd love to accept your patches and contributions to this project. There are
-just a few small guidelines you need to follow before making a change.
+You've discovered a bug or something else you want to change in OpenSTEF — excellent!
+
+You've worked out a way to fix it — even better!
+
+You want to tell us about it — best of all!
+
+Below, you can find a number of ways to contribute, and how to connect with the
+OpenSTEF community.
+
+## Ways to contribute
+
+<details open>
+<summary>Do I really have something to contribute to OpenSTEF?</summary>
+
+100% yes! There are so many ways to contribute to our community. Take a look
+at the following sections to learn more.
+
+There are a few typical new contributor profiles:
+
+* **You are an OpenSTEF user, and you see a bug, a potential improvement, or
+  something that annoys you, and you can fix it.**
+
+  You can search our issue tracker for an existing issue that describes your problem or
+  open a new issue to inform us of the problem you observed and discuss the best approach
+  to fix it. If your contributions would not be captured on GitHub (social media,
+  communication, educational content), you can also reach out to us on our
+  [LF Energy Slack workspace](https://slack.lfenergy.org/) (#openstef channel) or attend our four-weekly
+  co-coding meetings.
+
+* **You are not a regular OpenSTEF user but a domain expert: you know about
+  forecasting, machine learning, energy systems, time series analysis, or some
+  other field where OpenSTEF could be improved.**
+
+  Awesome — you have a focus on a specific application and domain and can
+  start there. In this case, maintainers can help you figure out the best
+  implementation; open an issue or pull request with a starting point, and we'll
+  be happy to discuss technical approaches.
+
+  If you prefer, you can use the [GitHub functionality for "draft" pull requests](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/changing-the-stage-of-a-pull-request#converting-a-pull-request-to-a-draft)
+  and request early feedback on whatever you are working on.
+
+* **You are new to OpenSTEF, both as a user and contributor, and want to start
+  contributing but have yet to develop a particular interest.**
+
+  Having some previous experience with forecasting or energy systems can be very
+  helpful when making open-source contributions. It helps you understand why
+  things are the way they are and how they *should* be. Having first-hand
+  experience and context is valuable both for what you can bring to the
+  conversation and to understand where other people are coming from.
+
+  Understanding the entire codebase is a long-term project, and nobody expects
+  you to do this right away. If you are determined to get started with
+  OpenSTEF and want to learn, going through the basic functionality,
+  choosing something to focus on (models, feature engineering, evaluation, etc.)
+  and gaining context on this area by reading the issues and pull requests
+  touching these subjects is a reasonable approach.
+
+</details>
+
+### Code
+
+You want to implement a feature or fix a bug or help with maintenance - much
+appreciated! Our library source code is found in:
+
+* Core forecasting models: `packages/openstef-models/`
+* Evaluation and analysis: `packages/openstef-beam/`
+* Core utilities, dataset types, and shared functionality: `packages/openstef-core/`
+* Examples and tutorials: `examples/`
+* Tests: `packages/*/tests/`
+
+Because many people use and work on OpenSTEF, we have guidelines for keeping
+our code consistent and mitigating the impact of changes.
+
+* [Code style guide](https://openstef.github.io/openstef/contribute/code_style_guide.html) - Coding standards and conventions (including logging practices)
+* [Development workflow](https://openstef.github.io/openstef/contribute/development_workflow.html) - Pull request workflow and guidelines
+* [Documentation guidelines](https://openstef.github.io/openstef/contribute/document.html) - Documentation writing guidelines
+
+Code is contributed through pull requests, so we recommend that you start at
+[Start a pull request](#start-a-pull-request). If you get stuck, please reach out on the
+[LF Energy Slack workspace](https://slack.lfenergy.org/) (#openstef channel) or join our four-weekly co-coding meetings.
+
+#### Tests
+
+OpenSTEF relies on automated tests to keep the library reliable as it grows, so
+testing is a required part of contributing code. Whenever you add significant new
+functionality, it must come with tests that cover the new behavior in the same
+pull request. Bug fixes are best paired with a regression test that would have caught the problem.
+
+Tests live in `packages/*/tests/` and run automatically in continuous
+integration. See the
+[development workflow](https://openstef.github.io/openstef/contribute/development_workflow.html)
+for how to run the test suite locally before opening your pull request.
+
+### Documentation
+
+You, as an end-user of OpenSTEF can make a valuable contribution because you can
+more clearly see the potential for improvement than a core developer. For example,
+you can:
+
+- Fix a typo
+- Clarify a docstring
+- Write or update an [example](https://openstef.github.io/openstef/examples.html)
+- Write or update a [tutorial](https://openstef.github.io/openstef/tutorials.html)
+- Improve the getting started guide
+- Add forecasting domain expertise to documentation
+
+Our code is documented inline in the source code files in `packages`.
+Our website structure mirrors our folder structure, meaning that a narrative
+document's URL roughly corresponds to its location in our folder structure:
+
+*Using the library:*
+
+- `examples/examples/`
+- `examples/tutorials/`
+- `docs/source/api/`
+
+*Information about the library:*
+
+- `docs/source/user_guide/`
+- `docs/source/project/`
+- `docs/source/contribute/`
+
+Instructions and guidelines for contributing documentation are found in:
+
+* [Documentation guidelines](https://openstef.github.io/openstef/contribute/document.html)
+* [Code style guide](https://openstef.github.io/openstef/contribute/code_style_guide.html)
+
+Documentation is contributed through pull requests, so we recommend that you start
+at [Start a pull request](#start-a-pull-request). If that feels intimidating, we encourage you to
+[open an issue](https://github.com/OpenSTEF/openstef/issues/new/choose) describing what improvements you would make. If you get stuck,
+please reach out on the [LF Energy Slack workspace](https://slack.lfenergy.org/)
+(#openstef channel) or see our [support](https://openstef.github.io/openstef/project/support.html) page for more ways to connect.
+
+### Community
+
+OpenSTEF's community is built by its members! You can help by:
+
+* Participating in our four-weekly community meetings (see [support](https://openstef.github.io/openstef/project/support.html))
+* Joining discussions on the [LF Energy Slack workspace](https://slack.lfenergy.org/) (#openstef channel)
+* Contributing to documentation and examples
+
+It helps us if you spread the word: reference the project from your blog
+and articles or link to it from your website!
+
+If OpenSTEF contributes to a project that leads to a scientific publication,
+please cite us following the [citing](https://openstef.github.io/openstef/project/citing.html) guidelines.
+
+If you have developed an extension to OpenSTEF, please consider adding it to our
+ecosystem or creating a tutorial showing how to integrate it.
+
+## New contributors
+
+Everyone comes to the project from a different place — in terms of experience
+and interest — so there is no one-size-fits-all path to getting involved. We
+recommend looking at existing issue or pull request discussions, and following
+the conversations during pull request reviews to get context. Or you can
+deep-dive into a subset of the code-base to understand what is going on.
+
+### Four-weekly co-coding meetings
+
+Every four weeks, we host co-coding meetings to work together on OpenSTEF development,
+discuss project roadmap, and support new contributors. Anyone can attend, whether
+you're a seasoned contributor or just getting started. These meetings are a great
+opportunity to:
+
+* Get real-time help with your contributions
+* Collaborate on complex issues
+* Learn about the project architecture
+* Meet other community members
+* Discuss upcoming features and priorities
+
+You can find meeting information and calendar invites on our
+[LF Energy wiki page](https://lf-energy.atlassian.net/wiki/spaces/OS/pages/32278358/Four-weekly+community+meeting).
+We encourage joining these meetings to get to know the people behind the GitHub handles 😉.
+
+### Good first issues
+
+While any contributions are welcome, we have marked some issues as
+particularly suited for new contributors by the label [good first issue](https://github.com/OpenSTEF/openstef/labels/good%20first%20issue). These
+are well documented issues, that do not require a deep understanding of the
+internals of OpenSTEF and are a great way to get started with contributing
+to the project.
+
+### First contributions
+
+If this is your first open source contribution, or your first time contributing to OpenSTEF,
+and you need help or guidance finding a good first issue, look no further. This section will
+guide you through each step:
+
+1. Navigate to the [issues page](https://github.com/OpenSTEF/openstef/issues/).
+2. Filter labels with ["good first issue"](https://github.com/OpenSTEF/openstef/labels/good%20first%20issue) to find beginner-friendly tasks.
+3. Click on an issue you would like to work on, and check to see if the issue has a pull request opened to resolve it.
+
+   * A good way to judge if you chose a suitable issue is by asking yourself, "Can I independently submit a PR in 1-2 weeks?"
+4. Check existing pull requests and filter by the issue number to make sure the issue is not already in progress.
+
+   * If the issue has a pull request (is in progress), you can ask to collaborate with the existing contributor.
+   * If a pull request does not exist, create a [draft pull request](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#draft-pull-requests) and follow our pull request guidelines.
+5. Please familiarize yourself with our contribution workflow and ensure you understand
+   the development setup process before starting your work.
+
+## Get connected
+
+When in doubt, we recommend going together! Get connected with our community of
+active contributors, many of whom felt just like you when they started out and
+are happy to welcome you and support you as you get to know how we work, and
+where things are.
+
+## Getting help
+
+If you need assistance:
+
+* 💬 **Slack**: Join the [LF Energy Slack workspace](https://slack.lfenergy.org/) (#openstef channel)
+* 🐛 **Issues**: Check [GitHub Issues](https://github.com/OpenSTEF/openstef/issues) or create a new one
+* 📧 **Email**: Contact us at `openstef@lfenergy.org`
+* 🤝 **Community meetings**: Join our four-weekly co-coding sessions
+
+For more information, see our [support](https://openstef.github.io/openstef/project/support.html) page.
+
+## Choose an issue
+
+In general, the OpenSTEF project does not assign issues. Issues are
+"assigned" or "claimed" by opening a PR; there is no other assignment
+mechanism. If you have opened such a PR, please comment on the issue thread to
+avoid duplication of work. Please check if there is an existing PR for the
+issue you are addressing. If there is, try to work with the author by
+submitting reviews of their code or commenting on the PR rather than opening
+a new PR; duplicate PRs are subject to being closed. However, if the existing
+PR is stalled and the original author is unresponsive, feel free to open a new PR
+referencing the old one.
+
+## Start a pull request
+
+The preferred way to contribute to OpenSTEF is to fork the [main
+repository](https://github.com/OpenSTEF/openstef/) on GitHub,
+then submit a "pull request" (PR). To work on a pull request:
+
+1. **First** set up a development environment by following the instructions in
+   [development setup](https://openstef.github.io/openstef/contribute/development_setup.html)
+
+2. **Then** start solving the issue, following the guidance in
+   [development workflow](https://openstef.github.io/openstef/contribute/development_workflow.html)
+
+3. **As part of verifying your changes** add tests for any major new
+   functionality to the automated test suite (see [Tests](#tests)), check that
+   your contribution meets the pull request guidelines, and then open a pull
+   request.
+
+4. **Finally** follow up with maintainers on the PR if waiting more than a few days for
+   feedback. Update the pull request as needed.
+
+If you have questions of any sort, reach out on the [LF Energy Slack workspace](https://slack.lfenergy.org/) (#openstef channel) and consider
+joining our [four-weekly co-coding meetings](#four-weekly-co-coding-meetings).
+
+### Signing the Developer Certificate of Origin (DCO)
+
+This project uses a [Developer Certificate of Origin, Version 1.1](http://developercertificate.org/) to ensure that each commit was written by the author or that the author has the appropriate rights to contribute the change.
+
+Each commit must include a sign-off line:
+
+```
+Signed-off-by: Joe Smith <joe.smith@email.com>
+```
+
+The project requires your real name and real email address. Anonymous contributions and pseudonyms are not accepted.
+
+**How to sign off:**
+
+- Use `git commit -s` or `git commit --signoff` to add the line automatically (requires `user.name` and `user.email` to be set in your git config)
+- GitHub UI integration for browser-based commits
+
+## AI-assisted contributions
+
+AI tools (e.g. LLMs or coding assistants) can be helpful when contributing to
+OpenSTEF. We welcome their use, as long as contributions remain clear,
+maintainable, and aligned with the following guidelines.
+
+> **Note:** These guidelines on using AI tools are still in development and will
+> likely be extended over time.
+
+### General expectations
+
+- You remain fully responsible for your contribution, regardless of AI usage
+- You should understand and be able to explain the code you submit
+- Treat AI as a support tool, not as an autonomous contributor
+
+### Transparency
+
+- If AI played a significant role, please disclose this in your pull request
+  or commit message (e.g. `Assisted-by: <tool name>`)
+- If AI is only used for fixing grammar or formatting, it does not need to be mentioned
+
+### Quality standards
+
+AI-assisted contributions must meet the same standards as any other contribution:
+
+- Include tests where applicable
+- Update documentation if needed
+- Follow coding style and project conventions (`poe all`)
+- Clearly describe the problem and your approach
+
+Please make sure to review and validate all generated code. AI tools can
+produce incorrect, outdated, or insecure patterns.
+
+### Scope and collaboration
+
+- Prefer small, well-scoped pull requests that are easy to review
+- Engage with maintainers via issues if your change is substantial
+- Avoid submitting large or bulk-generated changes without prior discussion,
+  as they may be rejected
+
+### Security and licensing
+
+- Review generated code for potential vulnerabilities
+- Ensure compliance with project licensing and proper attribution of reused
+  content
+
+### AI agents
+
+Autonomous agents or bots are not typical contributors to this project.
+
+- If you plan to use an AI agent, discuss this with the maintainers first
+- AI agents should identify themselves as AI
+- AI agents that generate low-value or disruptive contributions may be
+  restricted or blocked
 
 
-## Filing bugs and change requests
-
-You can file bugs against and change request for the project via github issues. Consult [GitHub Help](https://docs.github.com/en/free-pro-team@latest/github/managing-your-work-on-github/creating-an-issue) for more
-information on using github issues.
-
-## Community Guidelines
-
-This project follows the following [Code of Conduct](https://github.com/OpenSTEF/.github/blob/main/CODE_OF_CONDUCT.md).
-
-## Style guide
-
-This project uses the PEP 8 Style Guide for Python Code. For all details about the various conventions please refer to:
-
-[PEP 8](https://www.python.org/dev/peps/pep-0008)
-
-Tip: Use autopep8 to automatically format your Python code to conform to the PEP 8 style guide.
-
-Furthermore the following conventions apply:
-
-* Maximum line length: 88 characters
-* Double quotes for strings, keys etc.
-    * Except when double quotes in the middle of a string are required.
-
-## Git branching
-
-This project uses the [GitHub flow Workflow](https://guides.github.com/introduction/flow/) and branching model. The `main` branch always contains the latest release. New feature branches are branched from `main`. When a feature is finished it is merged back into `main` via a [Pull Request](https://docs.github.com/en/github/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-pull-requests#:~:text=Pull%20requests%20let%20you%20tell,merged%20into%20the%20base%20branch.).
-
-This project also uses [Jira](https://www.atlassian.com/software/jira) for its [Scrum](https://en.wikipedia.org/wiki/Scrum_software_development) planning. In order to connect git branches to Jira it is prefpreferred that the user story `id` (e.g. KTP-753) is added to the branch name.
-
-The following convention will be used for feature branches: 'Feature [jiraticketnumber] [descripttion]' or 'Feature [name feature]' when no Jiraticketnumber is avialable.  So for example:  `Feature ktp 753 unittest all schedulers` or `Feature unittest all schedulers`.
-
-The following convention will be used for bugfix branches: 'Bugfix [jiraticketnumber] [descripttion]' or 'Bugfix [name feature]' when no Jiraticketnumber is avialable.  So for example:  `Bugfix ktp 1425 use training days` or `Bugfix use training days`.
-
-## Signing the Developer Certificate of Origin (DCO)
-This project utilize a Developer Certificate of Origin (DCO) to ensure that each commit was written by the author or that the author has the appropriate rights necessary to contribute the change. Specifically, we utilize [Developer Certificate of Origin, Version 1.1](http://developercertificate.org/),  which is the same mechanism that the Linux® Kernel and many other communities use to manage code contributions. The DCO is considered one of the simplest tools for sign-offs from contributors as the representations are meant to be easy to read and indicating signoff is done as a part of the commit message.
-
-This means that each commit must include a DCO which looks like this:
-
-`Signed-off-by: Joe Smith <joe.smith@email.com>`
-
-The project requires that the name used is your real name and the e-mail used is your real e-mail. Neither anonymous contributors nor those utilizing pseudonyms will be accepted.
-
-There are other great tools out there to manage DCO signoffs for developers to make it much easier to do signoffs:
-* Git makes it easy to add this line to your commit messages. Make sure the `user.name` and `user.email` are set in your git configs. Use `-s` or `--signoff` to add the Signed-off-by line to the end of the commit message.
-* [GitHub UI integrations]( https://github.com/scottrigby/dco-gh-ui ) for adding the signoff automatically to commits made with the GitHub browser UI
-* Additionally, it is possible to use shell scripting to automatically apply the sign-off. For an example for bash to be put into a `.bashrc` file, see [the documentation provided by LF Energy](https://wiki.lfenergy.org/display/HOME/Contribution+and+Compliance+Guidelines#ContributionandComplianceGuidelines-Contributionsignoff). 
-* Alternatively, you can add `prepare-commit-msg hook` in .git/hooks directory. For an example, see [here](https://github.com/Samsung/ONE-vscode/wiki/ONE-vscode-Developer's-Certificate-of-Origin).
-
-## Code reviews
-
-All patches and contributions, including patches and contributions by project members, require review by one of the maintainers of the project. We
-use GitHub pull requests for this purpose. Consult the pull request process below and the
-[GitHub Help](https://help.github.com/articles/about-pull-requests/) for more
-information on using pull requests
-
-## Pull Request Process
-Contributions should be submitted as Github pull requests. See [Creating a pull request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) if you're unfamiliar with this concept.
-
-The process for a code change and pull request you should follow:
-
-1. Create a topic branch in your local repository, following the naming format
-"feature-KTP-###". For more information see the Git branching guideline.
-1. Make changes, compile, and test thoroughly. Ensure any install or build dependencies are removed before the end of the layer when doing a build. Code style should match existing style and conventions, and changes should be focused on the topic the pull request will be addressed. For more information see the style guide.
-1. Push commits to your fork.
-1. Create a Github pull request from your topic branch.
-1. Signing the Developer Certificate of Origin (DCO)
-1. Pull requests will be reviewed by one of the maintainers who may discuss, offer constructive feedback, request changes, or approve
-the work. For more information see the Code review guideline.
-1. Upon receiving the sign-off of one of the maintainers you may merge your changes, or if you
-   do not have permission to do that, you may request a maintainer to merge it for you.
-
-## Release Process
-Every new Pull Request merged to main triggers a new automatic github release with bumped patch version (0.0.**1**) and consequently a new pypi release and new published documentation. If needed, a manual release can be done:
-1. Major (**1**.0.0) or minor (0.**1**.0) version need to be bumped besides patch version: do this yourself in the feature branch in the setup.py.
-2. Pre-release needs to be made: do this yourself in the feature branch with new pre-release version in setup.py and manual pre-release in github GUI.
-
-## Attribution
-
-This Contributing.md is adapted from Google
-available at
-https://github.com/google/new-project/blob/master/docs/contributing.md
