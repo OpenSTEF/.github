@@ -17,15 +17,26 @@ The Technical Steering Committee (TSC) is responsible for:
 3. Architectural and (development) infrastructure choices
 4. Raise subjects/issues that are important for the direction/development of this project
 
-The TSC consists of the following members:
+The TSC currently consists of the following members:
 1. Jonas van den Bogaard
 2. Jan Maarten van Doorn
-3. Frederik Stoel
-4. Daan van Es (chair)
-5. Maxime Fortin
-6. Bart Pleiter
+3. Daan van Es (chair)
+4. Maxime Fortin
+5. Bart Pleiter
  
 Any community member or Contributor can ask that something be reviewed by the TSC by contacting the TSC at openstef@lfenergy.org.
+
+## Community Manager
+
+The openSTEF community manager is the primary point of contact for the OpenSTEF community and focuses on strengthening and growing the ecosystem. This includes:
+- facilitating community interactions and meetings including:
+  - the 4-weekly community meetings
+  - quarterly co-coding sessions
+- improves communication and documentation
+- supports users and contributors of OpenSTEF
+- structuring roadmap discussions and incorporating community feedback
+
+The current community manager is: Leander van der Bijl
 
 ## Maintainers
 
@@ -46,7 +57,7 @@ The current maintainers of this project are:
 5. Egor Dmitriev
 6. Lars Schilders
 
-Any community member or Contributor can ask a question or raise a issue to the maintainers by logging a GitHub issue.
+Any community member or Contributor can ask a question or raise an issue to the maintainers by logging a GitHub issue.
 
 ## Contributors
 
@@ -57,14 +68,14 @@ Anyone can become a contributor. There is no expectation of commitment to the pr
 Our gratitude goes to the following all-time top contributors:
 1. Jan Maarten van Doorn
 2. Frank Kreuwel
-3. Bram Harmsen
-4. David Swinkels
+3. Egor Dmitriev
+4. Bram Harmsen
 5. Enrico Schmitz
-6. Egor Dmitriev
-7. Martijn Cazemier
-8. Benoit Hardier
-9. Bart Pleiter
-10. Charlotte Cambier van Nooten
+6. David Swinkels
+7. Bart Pleiter
+8. Lars Schilders
+9. Marnix van Lieshout
+10. Martijn Cazemier
 
 ## PyPI project management
 
