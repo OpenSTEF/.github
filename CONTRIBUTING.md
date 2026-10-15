@@ -222,7 +222,9 @@ If you need assistance:
 * 🐛 **Issues**: Check [GitHub Issues](https://github.com/OpenSTEF/openstef/issues) or create a new one
 * 📧 **Email**: Contact us at `openstef@lfenergy.org`
 * 🤝 **Community meetings**: Join our four-weekly co-coding sessions
-* 🏢 **Professional support**: If you require dedicated support, implementation assistance, consulting, training, or custom development, you can contact one of the organizations listed in the [OpenSTEF Support Providers Directory](https://lf-energy.atlassian.net/wiki/spaces/OS/pages/1196883983/OpenSTEF+Support+Providers+Directory)
+* 🏢 **Professional support** is available through organizations listed in the [OpenSTEF Support Providers Directory](https://lf-energy.atlassian.net/wiki/spaces/OS/pages/1196883983/OpenSTEF+Support+Providers+Directory)
+
+For more information, see our [support](https://openstef.github.io/openstef/project/support.html) page.
 
 ## Choose an issue
 
