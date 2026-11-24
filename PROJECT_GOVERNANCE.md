@@ -23,6 +23,7 @@ The TSC currently consists of the following members:
 3. Daan van Es (chair)
 4. Maxime Fortin
 5. Bart Pleiter
+6. Egor Dmitriev
  
 Any community member or Contributor can ask that something be reviewed by the TSC by contacting the TSC at openstef@lfenergy.org.
 
